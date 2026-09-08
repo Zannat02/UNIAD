@@ -1,0 +1,51 @@
+{
+  "mainLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "About Us", "href": "/about" }
+  ],
+  "trailingLinks": [
+    { "label": "Contact Us", "href": "/contact" }
+  ],
+  "dropdowns": [
+    {
+      "key": "destinations",
+      "label": "Destinations",
+      "items": [
+        { "label": "United Kingdom", "href": "/study-in/uk" },
+        { "label": "Canada", "href": "/study-in/canada" },
+        { "label": "Australia", "href": "/study-in/australia" },
+        { "label": "USA", "href": "/study-in/usa" },
+        { "label": "Japan", "href": "/study-in/japan" },
+        { "label": "China", "href": "/study-in/china" },
+        { "label": "New Zealand", "href": "/study-in/new-zealand" },
+        { "label": "Europe", "href": "/study-in/europe" }
+      ],
+      "viewAll": { "label": "View All Destinations", "href": "/destinations" }
+    },
+    {
+      "key": "services",
+      "label": "Our Services",
+      "items": [
+        { "label": "Admission Support", "href": "/guides/admission-support" },
+        { "label": "Visa Assistance", "href": "/guides/visa-assistance" },
+        { "label": "Health Guidance", "href": "/guides/health-guidance" },
+        { "label": "Pre-Departure Support", "href": "/guides/pre-departure-support" },
+        { "label": "Student Accommodation", "href": "/guides/student-accommodation" },
+        { "label": "Career Guidance", "href": "/guides/career-guidance" }
+      ]
+    },
+    {
+      "key": "resources",
+      "label": "Resources",
+      "items": [
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Study Guides", "href": "/guides" },
+        { "label": "FAQs", "href": "/faqs" },
+        { "label": "Scholarships", "href": "/scholarships" },
+        { "label": "News & Updates", "href": "/news" },
+        { "label": "Events / Webinars", "href": "/events" }
+      ]
+    }
+  ],
+  "cta": { "label": "Take the Country Quiz", "href": "/quiz" }
+}

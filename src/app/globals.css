@@ -1,4 +1,61 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+
+ /* ---- add these lines into src/app/globals.css ---- */
+
+@theme {
+  --color-brand-navy: #14294f;
+  --color-brand-offwhite: #faf9f4;
+}
+
+body {
+  background-color: var(--color-brand-offwhite);
+}
+
+@keyframes navShine {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(320%);
+    opacity: 0;
+  }
+}
+
+.nav-shine-line {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-brand-navy),
+    transparent
+  );
+  animation: navShine 1.3s ease-in-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 :root {
   --background: #ffffff;
@@ -23,4 +80,64 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---- Navbar bottom line-এর অনবরত শাইন ইফেক্ট (বাম থেকে ডানে) ---- */
+@keyframes navLineShine {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(420%);
+  }
+}
+
+.nav-line-shine {
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  animation: navLineShine 3.5s ease-in-out infinite;
+}
+
+/* ---- CTA বাটনের hover/click শাইন ইফেক্ট ---- */
+.nav-cta-shine::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-teal);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+  z-index: 0;
+}
+
+.nav-cta-shine:hover::before,
+.nav-cta-shine:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.nav-cta-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: skewX(-20deg);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav-cta-shine:hover::after {
+  animation: ctaShineSweep 0.75s ease;
+}
+
+@keyframes ctaShineSweep {
+  from {
+    left: -60%;
+  }
+
+  to {
+    left: 130%;
+  }
 }
