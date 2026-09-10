@@ -55,9 +55,8 @@ export default function useCinematicTimeline() {
       const title3 = title3Ref.current;
       const subtitle3 = subtitle3Ref.current;
 
-      // ---------------- Initial state ----------------
-      // (CSS already hides these via scale-x-0 before JS runs;
-      // this just keeps GSAP's internal state in sync)
+      //  Initial state 
+     
       gsap.set(scene1, { opacity: 1 });
       gsap.set(scene2, { opacity: 0 });
       gsap.set(scene3, { opacity: 0 });
@@ -81,14 +80,14 @@ export default function useCinematicTimeline() {
         repeatDelay: 0.5,
       });
 
-      /* =========================================================
+      /* 
          SCENE 1 (campus.mp4)
-      ========================================================= */
+       */
       master.to({}, { duration: 5.5 });
 
-      /* ---------------------------------------------------------
+      /* 
          TRANSITION 1 : scene1 -> scene2  (icon-only panel, no text)
-      --------------------------------------------------------- */
+      */
       master.to(line, { scaleX: 1, duration: 0.45, ease: "power3.inOut" });
 
       master.to(
@@ -164,14 +163,14 @@ export default function useCinematicTimeline() {
         "-=0.35"
       );
 
-      /* =========================================================
+      /*
          SCENE 2 (hallway.mp4)
-      ========================================================= */
+      */
       master.to({}, { duration: 5.5 });
 
-      /* ---------------------------------------------------------
+      /*
          TRANSITION 2 : scene2 -> scene3 (encouraging text panel)
-      --------------------------------------------------------- */
+      */
       master.to(line, {
         scaleX: 1,
         transformOrigin: "left center",
@@ -256,14 +255,14 @@ export default function useCinematicTimeline() {
         "-=0.35"
       );
 
-      /* =========================================================
+      /* 
          SCENE 3 (studying and graduation.mp4)
-      ========================================================= */
+     */
       master.to({}, { duration: 5.5 });
 
-      /* ---------------------------------------------------------
+      /* 
          TRANSITION 3 : scene3 -> scene1 (diagonal-accent panel)
-      --------------------------------------------------------- */
+      */
       master.to(line, {
         scaleX: 1,
         transformOrigin: "right center",

@@ -28,7 +28,7 @@ export default function CinematicHero() {
       ref={heroRef}
       className="relative h-[calc(100vh-72px)] min-h-[600px] w-full overflow-hidden bg-black"
     >
-      {/* ================= VIDEO LAYER ================= */}
+      {/*  VIDEO LAYER  */}
 
       <video
         ref={scene1Ref}
@@ -60,9 +60,8 @@ export default function CinematicHero() {
       {/* Dark cinematic overlay */}
       <div className="pointer-events-none absolute inset-0 bg-black/10" />
 
-      {/* ================= TRANSITION LAYER ================= */}
-      {/* scale-x-0 + origin-right below = hidden by default via CSS,
-          so nothing flashes before JS/GSAP takes over on load/reload */}
+      {/* TRANSITION LAYER  */}
+     
 
       <div
         ref={lineRef}
@@ -81,11 +80,11 @@ export default function CinematicHero() {
         ))}
       </div>
 
-      {/* ============ PANEL 1 : icon-only (scene1 -> scene2) ============ */}
+      {/*  PANEL 1 : icon-only (scene1 -> scene2) */}
       <div
-        ref={panel1Ref}
-        className="pointer-events-none absolute left-0 top-0 z-40 flex h-full w-full origin-right scale-x-0 items-center justify-center bg-[#9DAD98]"
-      >
+  ref={panel1Ref}
+  className="pointer-events-none absolute left-0 top-0 z-40 flex h-full w-full origin-right scale-x-0 items-center justify-center bg-[#9DAD98] px-6 sm:px-10"
+>
         <div className="flex flex-col items-center text-center text-black">
           <svg
             ref={iconRef}
@@ -109,11 +108,12 @@ export default function CinematicHero() {
         </div>
       </div>
 
-      {/* ============ PANEL 2 : encouraging text (scene2 -> scene3) ============ */}
-      <div
-        ref={panel2Ref}
-        className="pointer-events-none absolute left-0 top-0 z-40 flex h-full w-full origin-right scale-x-0 items-center justify-center bg-[#9DAD98]"
-      >
+      {/* PANEL 2 : encouraging text (scene2 -> scene3)  */}
+    
+<div
+  ref={panel2Ref}
+  className="pointer-events-none absolute left-0 top-0 z-40 flex h-full w-full origin-right scale-x-0 items-center justify-center bg-[#9DAD98] px-6 sm:px-10"
+>
         <div className="overflow-hidden text-center text-black">
           <p
             ref={eyebrowRef}
@@ -137,7 +137,7 @@ export default function CinematicHero() {
         </div>
       </div>
 
-      {/* ============ PANEL 3 : diagonal-accent design (scene3 -> scene1) ============ */}
+      {/* PANEL 3 : diagonal-accent design (scene3 -> scene1) */}
       <div
         ref={panel3Ref}
         className="pointer-events-none absolute left-0 top-0 z-40 h-full w-full origin-right scale-x-0 overflow-hidden bg-[#101820]"
