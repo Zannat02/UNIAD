@@ -1,0 +1,68 @@
+[
+  {
+    "id": "manchester-cs-msc",
+    "universitySlug": "university-of-manchester",
+    "countrySlug": "uk",
+    "subject": "Computer Science",
+    "programName": "MSc Advanced Computer Science",
+    "level": "Postgraduate",
+    "duration": "1 year",
+    "tuitionFee": "£26,500/year",
+    "entryRequirement": "2:1 Bachelor's in a related field, IELTS 6.5"
+  },
+  {
+    "id": "manchester-business-msc",
+    "universitySlug": "university-of-manchester",
+    "countrySlug": "uk",
+    "subject": "Business Analytics",
+    "programName": "MSc Business Analytics: Operations Research and Risk Analysis",
+    "level": "Postgraduate",
+    "duration": "1 year",
+    "tuitionFee": "£29,000/year",
+    "entryRequirement": "2:1 Bachelor's with quantitative background, IELTS 6.5"
+  },
+  {
+    "id": "leeds-cs-msc",
+    "universitySlug": "university-of-leeds",
+    "countrySlug": "uk",
+    "subject": "Computer Science",
+    "programName": "MSc Computer Science",
+    "level": "Postgraduate",
+    "duration": "1 year",
+    "tuitionFee": "£24,750/year",
+    "entryRequirement": "2:2 Bachelor's in a related field, IELTS 6.5"
+  },
+  {
+    "id": "leeds-law-llm",
+    "universitySlug": "university-of-leeds",
+    "countrySlug": "uk",
+    "subject": "Law",
+    "programName": "LLM International Law",
+    "level": "Postgraduate",
+    "duration": "1 year",
+    "tuitionFee": "£23,000/year",
+    "entryRequirement": "2:1 Law degree or equivalent, IELTS 7.0"
+  },
+  {
+    "id": "bristol-engineering-msc",
+    "universitySlug": "university-of-bristol",
+    "countrySlug": "uk",
+    "subject": "Engineering",
+    "programName": "MSc Aerospace Engineering",
+    "level": "Postgraduate",
+    "duration": "1 year",
+    "tuitionFee": "£28,300/year",
+    "entryRequirement": "2:1 Bachelor's in Engineering, IELTS 6.5"
+  },
+  {
+    "id": "bristol-business-msc",
+    "universitySlug": "university-of-bristol",
+    "countrySlug": "uk",
+    "subject": "Business Analytics",
+    "programName": "MSc Accounting and Finance",
+    "level": "Postgraduate",
+    "duration": "1 year",
+    "tuitionFee": "£26,800/year",
+    "entryRequirement": "2:1 Bachelor's, IELTS 6.5"
+  }
+]

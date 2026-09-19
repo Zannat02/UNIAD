@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "uk",
+    "heroImage": null,
+    "heroVideo": null,
+
+    "about": {
+      "fullDescription": "With over 160 universities to choose from in the UK, and limitless courses and study options on offer, you can make your UK university experience as unique as you are.\n\nThere are different types of university in the UK: from world-renowned historic institutions, to more modern innovative facilities, to pioneering and progressive specialist research centres in locations all over the country. This endless choice means you have the chance to tailor your learning in line with your own aspirations and career goals.\n\nHigher education institutions are ranked each year by a variety of organisations, including the QS World University Rankings, the Times Higher Education (THE) World University Rankings, and the Complete University Guide. Rankings are a good place to start your research, but they won't tell you everything — subject-specific rankings can look very different from a university's overall ranking.\n\nWhen comparing universities, it's worth thinking about course flexibility, student satisfaction, career outcomes after graduation, teaching quality, research activity, campus facilities, and student life. Location matters too — the UK ranges from large bustling cities to quiet coastal towns, across England, Scotland, Wales, and Northern Ireland."
+    },
+
+    "whyStudy": {
+      "summary": "Beyond the rankings, here's what actually matters day-to-day: what it costs to live, how easy it is to work part-time, and what happens after you graduate.",
+      "sections": [
+        {
+          "title": "Cost of Living",
+          "summary": "Monthly living costs in the UK typically range from £900–1,400, depending heavily on the city — London runs noticeably higher than most other regions.",
+          "body": "Accommodation is usually the biggest expense, whether in university halls or private rentals. Outside London, students often manage on £900–1,100/month covering rent, food, transport, and essentials. In London, that figure regularly climbs toward £1,300–1,400/month. Budgeting for the first month is especially important, since many rentals ask for a deposit plus a month's rent upfront."
+        },
+        {
+          "title": "Part-time Job Opportunities",
+          "summary": "Most international students on a Student visa can work up to 20 hours per week during term time, and full-time during holidays.",
+          "body": "Common part-time roles for students include retail, hospitality, campus jobs (library assistant, student ambassador), and tutoring. Pay is usually around the National Minimum Wage. It's worth noting that part-time income is rarely enough to fully cover living costs on its own — it's best treated as a supplement, not a primary funding source. Visa conditions around working hours should always be checked directly against your specific visa type before accepting any job."
+        },
+        {
+          "title": "After Graduation",
+          "summary": "Graduates can apply for the Graduate Route visa, allowing up to 2 years (3 for PhD graduates) to work or job-hunt in the UK after finishing a degree.",
+          "body": "The Graduate Route doesn't require a job offer to apply — it simply extends your stay so you can look for work, gain experience, or transition into a skilled worker visa later if you find a sponsoring employer. Career services at most UK universities offer CV reviews, interview practice, and employer networking events, which are worth using well before your final semester."
+        }
+      ]
+    },
+
+    "courses": {
+      "guidanceIntro": "The UK offers thousands of undergraduate and postgraduate courses. When deciding on a course, it helps to think about your academic and career goals, whether the course offers work placements or research opportunities, and what current or former students say about their experience.",
+      "guidanceQuestions": [
+        "What subject are you most interested in, and how does it align with your future ambitions?",
+        "Does the course include work placements or a semester abroad (undergraduate) or research opportunities and industry connections (postgraduate)?",
+        "Would you prefer to study full-time or part-time?",
+        "What are the entry requirements for your level of study?",
+        "What do current and former students say about their experience in this course?"
+      ],
+      "externalResources": [
+        { "label": "UCAS course search", "url": "https://www.ucas.com/" },
+        { "label": "Discover Uni — compare course data", "url": "https://discoveruni.gov.uk/" }
+      ]
+    }
+  }
+]

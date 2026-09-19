@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "uk",
+    "name": "United Kingdom",
+    "featuredOnHome": true,
+    "homeImage": "/images/countries/uk-card.jpg",
+    "shortIntro": "Home to some of the world's oldest and most respected universities, with one-year Master's programs and strong post-study work opportunities.",
+    "quickFacts": {
+      "avgLivingCost": "£900–1,400/month",
+      "avgTuition": "£11,400–30,000/year",
+      "postStudyVisa": "2 years (Graduate Route)",
+      "language": "English"
+    }
+  }
+]

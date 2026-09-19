@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "university-of-manchester",
+    "name": "University of Manchester",
+    "countrySlug": "uk",
+    "image": null,
+    "ranking": "QS World Rank #32",
+    "shortDescription": "One of the UK's largest and most research-intensive universities.",
+    "website": "https://www.manchester.ac.uk"
+  },
+  {
+    "slug": "university-of-leeds",
+    "name": "University of Leeds",
+    "countrySlug": "uk",
+    "image": null,
+    "ranking": "QS World Rank #75",
+    "shortDescription": "A leading Russell Group university known for research and student support.",
+    "website": "https://www.leeds.ac.uk"
+  },
+  {
+    "slug": "university-of-bristol",
+    "name": "University of Bristol",
+    "countrySlug": "uk",
+    "image": null,
+    "ranking": "QS World Rank #55",
+    "shortDescription": "A research-intensive university with strong engineering and sciences.",
+    "website": "https://www.bristol.ac.uk"
+  }
+]
