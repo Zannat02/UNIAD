@@ -1,5 +1,12 @@
 import Link from "next/link";
 import VideoThumbnail from "./VideoThumbnail";
+import FallbackImage from "./FallbackImage";
+
+function mediaGradient(accent) {
+  return accent === "gold"
+    ? "from-[#C9A227]/25 via-[#C9A227]/10 to-transparent"
+    : "from-[#9DAD98]/35 via-[#9DAD98]/15 to-transparent";
+}
 
 /**
  * The core "magazine style" building block: media (image OR video) on one
@@ -8,14 +15,10 @@ import VideoThumbnail from "./VideoThumbnail";
  * - reverse:      true = media on the right, text on the left (default: media left)
  * - tone:         "offwhite" | "sage" (light tint) | "sage-solid" (full #9DAD98)
  *                 | "white" | "navy" (dark highlight, white text) | "transparent"
- *                 (no bg of its own — lets the parent page's bg show through,
- *                 used when the whole page already has a color like #C9A227)
  * - accent:       "sage" | "gold" | "navy" — placeholder tint + eyebrow color
  * - video:        { youtubeId, thumbnail } — click-to-play YouTube thumbnail
  *                 instead of the image placeholder
- * - headingTag:   heading level when there's no headingHref (default "h2") —
- *                 pass "h3" for repeated items like a list of reasons, so the
- *                 page's own <h1>/<h2> stays the top of the outline
+ * - headingTag:   heading level when there's no headingHref (default "h2")
  */
 export default function EditorialSplit({
   eyebrow,
@@ -72,7 +75,16 @@ export default function EditorialSplit({
           {video ? (
             <VideoThumbnail youtubeId={video.youtubeId} thumbnail={video.thumbnail} label={heading} />
           ) : (
-            <ImagePlaceholder src={image} label={heading} accent={accent} />
+            <FallbackImage
+              src={image}
+              alt={heading}
+              className="aspect-[4/3] w-full rounded-2xl object-cover"
+              placeholderClassName={`flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-[#101820]/10 bg-gradient-to-br ${mediaGradient(
+                accent
+              )}`}
+              placeholderTextClassName="text-xs font-medium uppercase tracking-[0.2em] text-[#101820]/40"
+              placeholderLabel={`${heading} — image placeholder`}
+            />
           )}
         </div>
 
@@ -114,30 +126,5 @@ export default function EditorialSplit({
         </div>
       </div>
     </section>
-  );
-}
-
-function ImagePlaceholder({ src, label, accent }) {
-  const gradient =
-    accent === "gold"
-      ? "from-[#C9A227]/25 via-[#C9A227]/10 to-transparent"
-      : "from-[#9DAD98]/35 via-[#9DAD98]/15 to-transparent";
-
-  if (src) {
-    return (
-      <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-[#101820]/5">
-        <img src={src} alt={label} className="h-full w-full object-cover" />
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className={`flex aspect-[4/3] w-full items-center justify-center rounded-2xl bg-gradient-to-br ${gradient} border border-[#101820]/10`}
-    >
-      <span className="px-4 text-center text-xs font-medium uppercase tracking-[0.2em] text-[#101820]/40">
-        {label} — image placeholder
-      </span>
-    </div>
   );
 }

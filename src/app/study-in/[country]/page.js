@@ -39,10 +39,7 @@ export default async function CountryPage({ params }) {
   return (
     <main>
       {/* ================= HERO (placeholder for now) =================
-          This will later become the GSAP scroll-driven video-to-frame
-          section once real footage is ready. For now it's a simple,
-          honest placeholder so the rest of the page can be built and
-          reviewed without waiting on that asset. */}
+         */}
       <section className="flex h-[60vh] min-h-[380px] w-full items-center justify-center bg-[#101820]">
         <div className="px-5 text-center">
           <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/60">
@@ -60,10 +57,7 @@ export default async function CountryPage({ params }) {
   
 
       {/* ================= ABOUT PREVIEW (editorial: image + text) =================
-          Replaces the old card-style PreviewSection for About specifically —
-          left image, right heading + 5-6 line paragraph + Read More CTA,
-          per the new magazine-style direction. Why Study / Courses previews
-          below are untouched for now, will get the same treatment next. */}
+           */}
       <EditorialSplit
         eyebrow="About"
         heading={details.about.preview.heading}
@@ -75,9 +69,7 @@ export default async function CountryPage({ params }) {
       />
 
       {/* ================= WHY STUDY PREVIEW (editorial: text + click-to-play video) =================
-          bg is the solid brand sage (#9DAD98) per the new direction — text
-          left, video thumbnail right, click opens the YouTube video in a
-          lightbox modal without leaving the page. */}
+           */}
       <EditorialSplit
         eyebrow="Why Study Here"
         heading={`Why Study in ${country.name}?`}

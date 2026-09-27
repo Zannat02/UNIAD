@@ -2,6 +2,7 @@ import Link from "next/link";
 import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
 import EditorialSplit from "@/components/country/EditorialSplit";
+import FallbackImage from "@/components/country/FallbackImage";
 
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
@@ -10,10 +11,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { country: countrySlug } = await params;
   const country = countries.find((c) => c.slug === countrySlug);
-  if (!country) return {};
+  const details = countryDetails.find((d) => d.slug === countrySlug);
+  if (!country || !details) return {};
 
   return {
-    title: `Why Study in ${country.name}? | UNIAD`,
+    title: `${details.whyStudy.reasons.length} Reasons to Study in ${country.name} | UNIAD`,
     description: `Cost of living, part-time work, and life after graduation in ${country.name}.`,
   };
 }
@@ -36,7 +38,8 @@ export default async function WhyStudyPage({ params }) {
 
   return (
     <main className="bg-[#9DAD98]">
-    
+      {/* ================= CONTAINED BANNER =================
+         */}
       <section className="px-5 pt-10 lg:px-8">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl">
           <BannerImage src={whyStudy.bannerImage} label={`Why Study in ${country.name}`} />
@@ -49,16 +52,13 @@ export default async function WhyStudyPage({ params }) {
           {country.name}
         </p>
         <h1 className="mx-auto mt-3 max-w-3xl text-2xl font-bold text-[#101820] md:text-4xl lg:text-5xl">
-          Why Study in {country.name}?
+          {whyStudy.reasons.length} Reasons to Study in {country.name}
         </h1>
-     
+      
       </section>
 
       {/* ================= 7 REASONS — alternating layout =================
-          Order alternates every reason regardless of highlight. Highlighted
-          reasons get tone="navy" (a dark strip against the gold page bg);
-          the rest use tone="transparent" so the gold page background shows
-          straight through. */}
+          */}
       {whyStudy.reasons.map((reason, i) => (
         <EditorialSplit
           key={reason.heading}
@@ -89,18 +89,15 @@ export default async function WhyStudyPage({ params }) {
 }
 
 function BannerImage({ src, label }) {
-  if (src) {
-    return (
-      <div className="relative h-[34vh] min-h-[240px] w-full bg-[#101820]">
-        <img src={src} alt={label} className="h-full w-full object-cover opacity-70" />
-      </div>
-    );
-  }
+
   return (
-    <div className="flex h-[34vh] min-h-[240px] w-full items-center justify-center bg-[#101820]">
-      <span className="text-xs font-medium uppercase tracking-[0.25em] text-white/40">
-        {label} — banner placeholder
-      </span>
-    </div>
+    <FallbackImage
+      src={src}
+      alt={label}
+      className="block w-full h-auto"
+      placeholderClassName="flex aspect-[21/9] min-h-[220px] w-full items-center justify-center bg-[#101820]"
+      placeholderTextClassName="text-xs font-medium uppercase tracking-[0.25em] text-white/40"
+      placeholderLabel={`${label} — banner placeholder`}
+    />
   );
 }

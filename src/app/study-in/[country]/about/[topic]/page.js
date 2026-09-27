@@ -2,11 +2,7 @@ import Link from "next/link";
 import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
 
-// Every topic across every country becomes a static route: the highlight
-// (e.g. "nations") plus each entry in about.details.topics (food, weather,
-// religion, travel-and-transport, language, holidays...). Content isn't
-// written yet — this just makes sure the route + back-navigation exists
-// so nothing 404s while that content gets filled in country by country.
+
 export async function generateStaticParams() {
   return countryDetails.flatMap((d) => {
     const about = d.about?.details;
