@@ -14,24 +14,33 @@ export async function generateMetadata({ params }) {
   if (!country) return {};
 
   return {
-    title: `Courses & Universities in ${country.name} | UNIAD`,
-    description: `Explore universities and courses in ${country.name}, plus guidance on choosing the right one for you.`,
+    title: `Compare Universities in ${country.name} | UNIAD`,
+    description: `Compare top universities in ${country.name} by career outcomes, value for money, and courses.`,
   };
 }
+
+const LABEL_COLOR = {
+  Strong: "text-[#1E4F49]",
+  Good: "text-[#101820]",
+  Moderate: "text-[#8C6220]",
+};
 
 export default async function CoursesPage({ params }) {
   const { country: countrySlug } = await params;
 
   const country = countries.find((c) => c.slug === countrySlug);
   const details = countryDetails.find((d) => d.slug === countrySlug);
-  const countryUniversities = universities.filter(
-    (u) => u.countrySlug === countrySlug
-  );
+  const countryUniversities = universities
+    .filter((u) => u.countrySlug === countrySlug)
+    .sort((a, b) => a.tierRank - b.tierRank);
+
+  const topFive = countryUniversities.filter((u) => u.tier === "top-5");
+  const nextFive = countryUniversities.filter((u) => u.tier === "next-5");
 
   if (!country || !details) {
     return (
       <div className="px-5 py-24 text-center text-[#101820]">
-        <p>We couldn't find that country page.</p>
+        <p>We couldn&apos;t find that country page.</p>
       </div>
     );
   }
@@ -44,8 +53,12 @@ export default async function CoursesPage({ params }) {
           {country.name}
         </p>
         <h1 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-          Courses & Universities
+          Compare Universities & Courses
         </h1>
+        <p className="mx-auto mt-4 max-w-xl text-sm text-white/70 md:text-base">
+          Not just a list of universities — a comparison of career outcomes, cost,
+          and how likely graduates are to settle after finishing their degree.
+        </p>
       </section>
 
       {/* ================= GUIDANCE SECTION ================= */}
@@ -60,7 +73,6 @@ export default async function CoursesPage({ params }) {
           <p className="mt-4 text-sm text-[#101820]/75 md:text-base">
             {details.courses.guidanceIntro}
           </p>
-
           <ul className="mt-6 space-y-3">
             {details.courses.guidanceQuestions.map((q, i) => (
               <li key={i} className="flex gap-3 text-sm text-[#101820]/80 md:text-base">
@@ -69,48 +81,85 @@ export default async function CoursesPage({ params }) {
               </li>
             ))}
           </ul>
-
-          {details.courses.externalResources?.length > 0 && (
-            <div className="mt-8 flex flex-wrap gap-3">
-              {details.courses.externalResources.map((resource) => (
-                <a
-                  key={resource.url}
-                  href={resource.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg border border-[#9DAD98] px-4 py-2 text-sm font-medium text-[#101820] transition-colors hover:border-[#C9A227]"
-                >
-                  {resource.label} ↗
-                </a>
-              ))}
-            </div>
-          )}
         </div>
       </section>
 
-      {/* ================= UNIVERSITY LIST ================= */}
+      {/* ================= QUICK COMPARISON TABLE ================= */}
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
-            Featured Universities
+            At a Glance
           </p>
           <h2 className="mt-3 text-2xl font-bold text-[#101820] md:text-3xl">
-            {countryUniversities.length} universities in {country.name}
+            Quick comparison
           </h2>
 
-          <div className="mt-8 space-y-6">
-            {countryUniversities.map((uni) => (
-              <UniversityCard key={uni.slug} university={uni} />
-            ))}
+          <div className="mt-6 overflow-x-auto rounded-xl border border-[#101820]/10 bg-white">
+            <table className="w-full min-w-[560px] text-left text-sm">
+              <thead>
+                <tr className="border-b border-[#101820]/10 text-[11px] uppercase tracking-wide text-[#101820]/50">
+                  <th className="px-4 py-3">University</th>
+                  <th className="px-4 py-3">Career Growth</th>
+                  <th className="px-4 py-3">Value for Money</th>
+                  <th className="px-4 py-3">Settlement Chance</th>
+                </tr>
+              </thead>
+              <tbody>
+                {countryUniversities.map((uni) => (
+                  <tr key={uni.slug} className="border-b border-[#101820]/5 last:border-0">
+                    <td className="px-4 py-3 font-medium text-[#101820]">{uni.name}</td>
+                    <td className={`px-4 py-3 font-medium ${LABEL_COLOR[uni.comparisonHighlights.careerGrowth]}`}>
+                      {uni.comparisonHighlights.careerGrowth}
+                    </td>
+                    <td className={`px-4 py-3 font-medium ${LABEL_COLOR[uni.comparisonHighlights.valueForMoney]}`}>
+                      {uni.comparisonHighlights.valueForMoney}
+                    </td>
+                    <td className={`px-4 py-3 font-medium ${LABEL_COLOR[uni.comparisonHighlights.settlementChance]}`}>
+                      {uni.comparisonHighlights.settlementChance}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
+          <p className="mt-3 text-xs text-[#101820]/50">
+            Based on general institutional reputation — pending verification against
+            HESA Graduate Outcomes and Discover Uni before publishing live.
+          </p>
         </div>
       </section>
+
+      {/* ================= TOP 5 ================= */}
+      <TierSection title="Top 5 Universities" universities={topFive} />
+
+      {/* ================= NEXT 5 ================= */}
+      <TierSection title="Next 5 Universities" universities={nextFive} tone="alt" />
     </main>
+  );
+}
+
+function TierSection({ title, universities: list, tone = "default" }) {
+  const bg = tone === "alt" ? "bg-[#FAF9F4]" : "bg-white";
+  if (list.length === 0) return null;
+
+  return (
+    <section className={`${bg} px-5 py-14 lg:px-8`}>
+      <div className="mx-auto max-w-4xl">
+        <h2 className="text-2xl font-bold text-[#101820] md:text-3xl">{title}</h2>
+        <div className="mt-8 space-y-6">
+          {list.map((uni) => (
+            <UniversityCard key={uni.slug} university={uni} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
 function UniversityCard({ university }) {
   const uniPrograms = programs.filter((p) => p.universitySlug === university.slug);
+  const { careerGrowth, valueForMoney, settlementChance, tagline } =
+    university.comparisonHighlights;
 
   return (
     <div className="rounded-xl border border-[#101820]/10 bg-white p-6">
@@ -120,7 +169,7 @@ function UniversityCard({ university }) {
           <p className="mt-1 text-xs font-medium uppercase tracking-wide text-[#C9A227]">
             {university.ranking}
           </p>
-          <p className="mt-2 text-sm text-[#101820]/70">{university.shortDescription}</p>
+          <p className="mt-2 text-sm text-[#101820]/70">{tagline}</p>
         </div>
 
         <a
@@ -131,6 +180,13 @@ function UniversityCard({ university }) {
         >
           Visit University Website ↗
         </a>
+      </div>
+
+      {/* comparison label chips */}
+      <div className="mt-4 flex flex-wrap gap-2">
+        <Chip label="Career Growth" value={careerGrowth} />
+        <Chip label="Value for Money" value={valueForMoney} />
+        <Chip label="Settlement Chance" value={settlementChance} />
       </div>
 
       {uniPrograms.length > 0 && (
@@ -159,5 +215,15 @@ function UniversityCard({ university }) {
         </div>
       )}
     </div>
+  );
+}
+
+function Chip({ label, value }) {
+  return (
+    <span
+      className={`rounded-full border border-[#101820]/10 px-3 py-1 text-xs font-medium ${LABEL_COLOR[value]}`}
+    >
+      {label}: {value}
+    </span>
   );
 }

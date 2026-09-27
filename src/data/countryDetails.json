@@ -5,11 +5,109 @@
     "heroVideo": null,
 
     "about": {
-      "fullDescription": "With over 160 universities to choose from in the UK, and limitless courses and study options on offer, you can make your UK university experience as unique as you are.\n\nThere are different types of university in the UK: from world-renowned historic institutions, to more modern innovative facilities, to pioneering and progressive specialist research centres in locations all over the country. This endless choice means you have the chance to tailor your learning in line with your own aspirations and career goals.\n\nHigher education institutions are ranked each year by a variety of organisations, including the QS World University Rankings, the Times Higher Education (THE) World University Rankings, and the Complete University Guide. Rankings are a good place to start your research, but they won't tell you everything — subject-specific rankings can look very different from a university's overall ranking.\n\nWhen comparing universities, it's worth thinking about course flexibility, student satisfaction, career outcomes after graduation, teaching quality, research activity, campus facilities, and student life. Location matters too — the UK ranges from large bustling cities to quiet coastal towns, across England, Scotland, Wales, and Northern Ireland."
+      "preview": {
+        "heading": "Study in the Home of World-Class Education",
+        "paragraph": "With over 160 universities to choose from, the UK gives you a range of study options few other countries can match. From world-renowned historic institutions to modern, industry-focused campuses, you can shape a degree around your own goals rather than someone else's template.\n\nBeyond the classroom, you'll find an open, multicultural way of life, dependable transport connecting every corner of the country, and one of the most respected healthcare systems in the world.",
+        "image": "/images/countries/uk/about-preview.jpg"
+      },
+      "details": {
+        "bannerImage": "/images/countries/uk/about-banner.jpg",
+        "introParagraph": "Beyond the world-class education and high-quality teaching, there is so much to love in the UK (also known by its full name: The United Kingdom of Great Britain and Northern Ireland). From our open and inclusive way of life to our ancient traditions, and our stunning landscapes to our unbeatable international cultural scene, you'll be well looked after — with a trustworthy police force, affordable transport connecting towns and cities across all four nations, and one of the most advanced healthcare systems in the world.",
+
+        "highlight": {
+          "slug": "nations",
+          "title": "UK Nations",
+          "body": "The UK is a union of four nations — England, Northern Ireland, Scotland and Wales — each with its own character, cities, and traditions. Studying in Manchester feels very different to studying in Edinburgh or Cardiff, and that variety means you can pick a setting that genuinely fits how you want to live, not just where the highest-ranked course happens to be.\n\nEvery nation shares the same world-class standard of teaching and the same post-study opportunities, so the choice comes down to the kind of city, pace, and culture you want around you for the next few years.",
+          "image": "/images/countries/uk/nations.jpg",
+          "ctaLabel": "Explore the four UK nations",
+          "ctaHref": "nations"
+        },
+
+        "topics": [
+          {
+            "slug": "food",
+            "title": "Food",
+            "body": "UK food culture is far more diverse than its reputation suggests. Every major city has thriving international food scenes — from South Asian and Middle Eastern to East African and Caribbean — sitting alongside British classics like a Sunday roast or fish and chips.\n\nStudent budgets go a long way if you cook at home: supermarkets like Aldi, Lidl, and Tesco offer weekly essentials at low prices, and most campuses have affordable halls kitchens or student-priced cafés. Eating out is easiest to manage with lunchtime deals, student discount apps, and local markets, which are usually cheaper and fresher than city-centre chains.",
+            "image": "/images/countries/uk/food.jpg"
+          },
+          {
+            "slug": "weather",
+            "title": "Weather",
+            "body": "UK weather is genuinely changeable — a bright morning can turn into an afternoon drizzle without much warning, which is exactly why locals treat a light rain jacket as a year-round essential rather than a seasonal one.\n\nSummers are mild (usually 18–25°C) and winters rarely drop far below freezing outside of the north, but the damp and the shorter daylight hours in winter take some adjusting to for students coming from hotter climates. A good waterproof coat, layers you can add or remove through the day, and sturdy shoes will get you through almost any UK forecast comfortably.",
+            "image": "/images/countries/uk/weather.jpg"
+          },
+          {
+            "slug": "religion",
+            "title": "Religion",
+            "body": "The UK is a multi-faith, largely secular society where all religions are widely practised and respected. Most university towns and cities have mosques, temples, gurdwaras, churches, and synagogues within easy reach of campus, and student unions typically run dedicated faith and cultural societies.\n\nUniversities are generally well set up to support religious students — think prayer rooms on campus, halal and other dietary options in dining halls, and flexibility around religious holidays for coursework and exams. It's worth checking your specific university's faith and chaplaincy services once you have an offer.",
+            "image": "/images/countries/uk/religion.jpg"
+          },
+          {
+            "slug": "travel-and-transport",
+            "title": "Travel and Transport",
+            "body": "Whether you're based in a city centre or a quieter campus town, the UK's transport network makes it easy to get around — and to see a lot of the country during your time here. Buses and trains connect virtually every town, and most cities have local discount travel cards for students.\n\nA 16-25 Railcard cuts train fares by up to a third, and many local bus operators offer similar student passes. For weekend trips, budget coach services and regional trains make cities like Edinburgh, Manchester, Bristol, and Cardiff easily reachable without needing a car — most students never own one during their studies.",
+            "image": "/images/countries/uk/travel.jpg"
+          },
+          {
+            "slug": "language",
+            "title": "Language",
+            "body": "English is spoken and taught across the UK, but it isn't the only language you'll hear on a daily basis. In London alone, it's estimated that more than 300 languages are spoken, and most university cities have similarly diverse international communities.\n\nWelsh, Scottish Gaelic, and Irish are also official languages in their respective nations, visible on road signs and public announcements in parts of Wales, Scotland, and Northern Ireland. For international students, most universities also offer English-language support courses alongside your degree if you want extra confidence in academic writing or spoken English.",
+            "image": "/images/countries/uk/language.jpg"
+          },
+          {
+            "slug": "holidays",
+            "title": "Holidays",
+            "body": "The UK calendar is full of public holidays and local celebrations worth planning around — from Christmas markets and New Year fireworks to Bonfire Night, Pancake Day, and regional festivals unique to each nation, like St Andrew's Day in Scotland or St David's Day in Wales.\n\nUniversities typically build these into the academic calendar with a winter break around Christmas and New Year and a spring break around Easter, giving international students a natural window to travel home or explore Europe. Term-time also brings university-run cultural events, so you don't have to wait for an official holiday to experience UK traditions firsthand.",
+            "image": "/images/countries/uk/holidays.jpg"
+          }
+        ]
+      }
     },
 
     "whyStudy": {
       "summary": "Beyond the rankings, here's what actually matters day-to-day: what it costs to live, how easy it is to work part-time, and what happens after you graduate.",
+      "bannerImage": "/images/countries/uk/why-study-banner.jpg",
+      "video": {
+        "youtubeId": "REPLACE_WITH_REAL_YOUTUBE_ID",
+        "thumbnail": "/images/countries/uk/why-study-thumb.jpg"
+      },
+      "reasons": [
+        {
+          "heading": "World-Class Universities, Recognised Everywhere",
+          "body": "The UK is home to some of the most respected universities on the planet, including Oxford, Cambridge, and Imperial College London — names that carry weight with employers no matter where in the world you end up working. What makes UK teaching stand out isn't just the ranking, though; it's the style of teaching itself, which pushes students to think critically, question ideas, and form their own opinions rather than just memorise facts.\n\nWith one of the widest ranges of subjects available anywhere, whatever you choose to study, you'll be learning it at a genuinely high standard.",
+          "highlight": true
+        },
+        {
+          "heading": "Shorter Degrees, Lower Overall Cost",
+          "body": "One thing that surprises a lot of international students: a UK Master's degree usually takes just one year, and a Bachelor's takes three — both shorter than the norm in countries like the US or Canada. That shorter timeline doesn't mean a lighter education; it just means a more focused one.\n\nIt also has a very practical upside — less time spent studying means less money spent on tuition and living costs overall, so your degree ends up more affordable even before you factor in scholarships or part-time work.",
+          "highlight": false
+        },
+        {
+          "heading": "Stay and Work After You Graduate",
+          "body": "Finishing your degree doesn't mean your time in the UK has to end. The Graduate Route visa lets international students stay on for up to 2 years after an undergraduate or Master's degree — or 3 years after a PhD — to work or look for work, with no job offer required to apply.\n\nThis gives you real breathing room to build UK work experience, grow your professional network, and — if things go well — move into a longer-term skilled worker visa with an employer willing to sponsor you.",
+          "highlight": true
+        },
+        {
+          "heading": "Earn While You Learn",
+          "body": "Studying in the UK doesn't mean putting your finances entirely on hold. Most international students on a Student visa can work up to 20 hours a week during term time, and full-time during holidays — enough to cover some day-to-day costs and pick up valuable UK work experience along the way.\n\nCommon options include retail, hospitality, and on-campus roles like library or student ambassador positions. It's not usually enough to fund your studies on its own, but it takes some pressure off your budget.",
+          "highlight": false
+        },
+        {
+          "heading": "A Safe, Welcoming, Multicultural Home",
+          "body": "With students arriving from over 180 countries, UK campuses are genuinely international places — you'll find classmates, food, festivals, and faith communities from all over the world, often within walking distance of each other. Whatever your background or beliefs, there's a strong chance you'll feel at home quickly.\n\nUniversities also back this up with real support — pastoral teams who help with everything from housing and visa questions to homesickness and language confidence — plus a low crime rate and a trustworthy police force that make everyday life feel secure.",
+          "highlight": false
+        },
+        {
+          "heading": "Healthcare You Don't Have to Worry About",
+          "body": "Health cover is one less thing to stress about while you're studying abroad. As part of your student visa application, you'll pay the Immigration Health Surcharge, which then gives you access to the UK's National Health Service (NHS) — one of the most comprehensive public healthcare systems in the world.\n\nThat covers both physical and mental health care, so if you ever need to see a doctor, get treatment, or talk to someone about how you're coping, help is there and it's affordable.",
+          "highlight": false
+        },
+        {
+          "heading": "A Head Start on a Global Career",
+          "body": "UK graduates are known for being genuinely job-ready — it isn't unusual for students to receive offers before they've even finished their final year. Employers don't just value the qualification on paper; they consistently point to strong English communication, sharp problem-solving, and confident leadership as what sets UK graduates apart.\n\nA lot of that comes from how closely UK universities work with industry — placements, internships, and guest input from real companies mean you're building professional connections and practical experience long before graduation, not just after it.",
+          "highlight": true
+        }
+      ],
       "sections": [
         {
           "title": "Cost of Living",

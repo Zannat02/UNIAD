@@ -2,17 +2,12 @@ import Link from "next/link";
 import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
 import universities from "@/data/universities.json";
+import EditorialSplit from "@/components/country/EditorialSplit";
 
-// Build every country page at build-time (static generation) instead of
-// on-demand — faster loads, better SEO, and it's how we've been doing
-// every other data-driven page on this site.
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
 }
 
-// Per-page <title>/<meta description>, pulled straight from the data
-// instead of being hardcoded — every country page gets its own correct
-// SEO metadata automatically.
 export async function generateMetadata({ params }) {
   const { country: countrySlug } = await params;
   const country = countries.find((c) => c.slug === countrySlug);
@@ -62,33 +57,36 @@ export default async function CountryPage({ params }) {
         </div>
       </section>
 
-      {/* ================= QUICK FACTS STRIP ================= */}
-      <section className="border-b border-[#101820]/10 bg-white px-5 py-6">
-        <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 text-center sm:grid-cols-4">
-          <QuickFact label="Avg. Living Cost" value={country.quickFacts.avgLivingCost} />
-          <QuickFact label="Avg. Tuition" value={country.quickFacts.avgTuition} />
-          <QuickFact label="Post-Study Visa" value={country.quickFacts.postStudyVisa} />
-          <QuickFact label="Language" value={country.quickFacts.language} />
-        </div>
-      </section>
+  
 
-      {/* ================= ABOUT PREVIEW ================= */}
-      <PreviewSection
+      {/* ================= ABOUT PREVIEW (editorial: image + text) =================
+          Replaces the old card-style PreviewSection for About specifically —
+          left image, right heading + 5-6 line paragraph + Read More CTA,
+          per the new magazine-style direction. Why Study / Courses previews
+          below are untouched for now, will get the same treatment next. */}
+      <EditorialSplit
         eyebrow="About"
-        title={`About ${country.name}`}
-        body={country.shortIntro}
-        ctaLabel="Explore More"
-        ctaHref={`/study-in/${country.slug}/about`}
+        heading={details.about.preview.heading}
+        paragraphs={details.about.preview.paragraph}
+        image={details.about.preview.image}
+        tone="white"
+        accent="sage"
+        cta={{ label: "Read More", href: `/study-in/${country.slug}/about` }}
       />
 
-      {/* ================= WHY STUDY PREVIEW ================= */}
-      <PreviewSection
+      {/* ================= WHY STUDY PREVIEW (editorial: text + click-to-play video) =================
+          bg is the solid brand sage (#9DAD98) per the new direction — text
+          left, video thumbnail right, click opens the YouTube video in a
+          lightbox modal without leaving the page. */}
+      <EditorialSplit
         eyebrow="Why Study Here"
-        title={`Why Study in ${country.name}?`}
-        body={details.whyStudy.summary}
-        ctaLabel="Learn More"
-        ctaHref={`/study-in/${country.slug}/why-study`}
-        tone="alt"
+        heading={`Why Study in ${country.name}?`}
+        paragraphs={details.whyStudy.summary}
+        video={details.whyStudy.video}
+        tone="sage-solid"
+        accent="navy"
+        reverse
+        cta={{ label: "Learn More", href: `/study-in/${country.slug}/why-study` }}
       />
 
       {/* ================= COURSES PREVIEW ================= */}

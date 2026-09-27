@@ -1,6 +1,7 @@
 import Link from "next/link";
 import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
+import EditorialSplit from "@/components/country/EditorialSplit";
 
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
@@ -31,14 +32,15 @@ export default async function AboutPage({ params }) {
     );
   }
 
-  // fullDescription is written with \n\n between paragraphs in the JSON —
-  // split it here so each paragraph gets its own <p>, rather than dumping
-  // one giant unbroken block of text on the page.
-  const paragraphs = details.about.fullDescription.split("\n\n");
+  const { details: about } = details.about;
+  const basePath = `/study-in/${country.slug}/about`;
 
   return (
     <main>
-      <section className="bg-[#101820] px-5 py-14 text-center">
+      {/* ================= BANNER ================= */}
+      <BannerImage src={about.bannerImage} label={`About ${country.name}`} />
+
+      <section className="bg-[#101820] px-5 py-10 text-center">
         <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/60">
           {country.name}
         </p>
@@ -47,30 +49,75 @@ export default async function AboutPage({ params }) {
         </h1>
       </section>
 
+      {/* ================= INTRO PARAGRAPH ================= */}
       <section className="bg-white px-5 py-14 lg:px-8">
-        <div className="mx-auto max-w-2xl space-y-5">
-          {paragraphs.map((paragraph, i) => (
-            <p key={i} className="text-sm leading-relaxed text-[#101820]/80 md:text-base">
-              {paragraph}
-            </p>
-          ))}
+        <div className="mx-auto max-w-2xl">
+          <p className="text-sm leading-relaxed text-[#101820]/80 md:text-base">
+            {about.introParagraph}
+          </p>
+        </div>
+      </section>
 
-          <div className="flex flex-wrap gap-3 pt-4">
-            <Link
-              href={`/study-in/${country.slug}/why-study`}
-              className="rounded-lg bg-[#101820] px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-            >
-              Why Study Here
-            </Link>
-            <Link
-              href={`/study-in/${country.slug}/courses`}
-              className="rounded-lg border border-[#9DAD98] px-6 py-3 text-sm font-semibold text-[#101820] transition-colors hover:border-[#C9A227]"
-            >
-              Explore Courses & Universities
-            </Link>
-          </div>
+      {/* ================= HIGHLIGHT (e.g. UK Nations) — text left, image right, sage tint ================= */}
+      {about.highlight && (
+        <EditorialSplit
+          heading={about.highlight.title}
+          paragraphs={about.highlight.body}
+          image={about.highlight.image}
+          tone="sage"
+          accent="sage"
+          reverse
+          cta={{
+            label: about.highlight.ctaLabel,
+            href: `${basePath}/${about.highlight.ctaHref}`,
+          }}
+        />
+      )}
+
+      {/* ================= TOPICS — alternating image/text rows, alternating bg ================= */}
+      {about.topics.map((topic, i) => (
+        <EditorialSplit
+          key={topic.slug}
+          heading={topic.title}
+          headingHref={`${basePath}/${topic.slug}`}
+          paragraphs={topic.body}
+          image={topic.image}
+          tone={i % 2 === 0 ? "offwhite" : "white"}
+          accent="gold"
+          reverse={i % 2 === 1}
+        />
+      ))}
+
+      {/* ================= BACK ================= */}
+      <section className="bg-white px-5 py-10 lg:px-8">
+        <div className="mx-auto max-w-2xl">
+          <Link
+            href={`/study-in/${country.slug}`}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#101820]/70 transition-colors hover:text-[#101820]"
+          >
+            <span aria-hidden="true">&larr;</span>
+            Back to {country.name} overview
+          </Link>
         </div>
       </section>
     </main>
+  );
+}
+
+function BannerImage({ src, label }) {
+  if (src) {
+    // eslint-disable-next-line @next/next/no-img-element
+    return (
+      <div className="relative h-[32vh] min-h-[220px] w-full overflow-hidden bg-[#101820]">
+        <img src={src} alt={label} className="h-full w-full object-cover opacity-70" />
+      </div>
+    );
+  }
+  return (
+    <div className="flex h-[32vh] min-h-[220px] w-full items-center justify-center bg-[#101820]">
+      <span className="text-xs font-medium uppercase tracking-[0.25em] text-white/40">
+        {label} — banner placeholder
+      </span>
+    </div>
   );
 }
