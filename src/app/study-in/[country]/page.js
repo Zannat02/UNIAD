@@ -38,8 +38,8 @@ export default async function CountryPage({ params }) {
 
   return (
     <main>
-      {/* ================= HERO (placeholder for now) =================
-         */}
+    
+        
       <section className="flex h-[60vh] min-h-[380px] w-full items-center justify-center bg-[#101820]">
         <div className="px-5 text-center">
           <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/60">
@@ -56,8 +56,6 @@ export default async function CountryPage({ params }) {
 
   
 
-      {/* ================= ABOUT PREVIEW (editorial: image + text) =================
-           */}
       <EditorialSplit
         eyebrow="About"
         heading={details.about.preview.heading}
@@ -68,8 +66,7 @@ export default async function CountryPage({ params }) {
         cta={{ label: "Read More", href: `/study-in/${country.slug}/about` }}
       />
 
-      {/* ================= WHY STUDY PREVIEW (editorial: text + click-to-play video) =================
-           */}
+     
       <EditorialSplit
         eyebrow="Why Study Here"
         heading={`Why Study in ${country.name}?`}
@@ -81,7 +78,7 @@ export default async function CountryPage({ params }) {
         cta={{ label: "Learn More", href: `/study-in/${country.slug}/why-study` }}
       />
 
-      {/* ================= COURSES PREVIEW ================= */}
+      {/*  COURSES PREVIEW  */}
       <PreviewSection
         eyebrow="Courses & Universities"
         title="Explore Courses"

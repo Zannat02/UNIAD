@@ -128,6 +128,58 @@
     },
 
     "courses": {
+      "topCourses": [
+        {
+          "rank": 1,
+          "name": "Economics",
+          "body": "Economics tops the list for international applicants, drawing the highest volume of overseas applications of any subject. It blends maths-heavy analysis with real-world topics — inflation, productivity, market behaviour, budgeting — and pairs well with joint degrees like Economics & Finance or Politics, Philosophy & Economics. That flexibility is a big part of the appeal: the skill set transfers cleanly into government, global business, education, or finance, which is likely why it consistently pulls in such a wide international applicant pool."
+        },
+        {
+          "rank": 2,
+          "name": "Law",
+          "body": "Law is the second most applied-to subject among international students, largely thanks to the UK's outsized influence on legal systems worldwide — English common law underpins a huge share of legal frameworks globally, and English commercial law shapes how many international contracts are written. A Law degree sharpens research, analytical thinking, negotiation, and communication skills, and strong English proficiency matters a lot here. It opens doors well beyond courtrooms — business, government, and community-facing careers all draw on a legal background."
+        },
+        {
+          "rank": 3,
+          "name": "Computer Science",
+          "body": "Computer Science ranks third by application volume, and it's easy to see why given the strong graduate earning potential attached to it. Students go on to work across software, computing architecture, VR, e-commerce platforms, and robotics, backed by well-regarded UK computer science departments and researchers. Since nearly every industry now runs on some form of computer system, graduate outcomes in this field tend to stay strong across a wide range of career paths."
+        },
+        {
+          "rank": 4,
+          "name": "Management Studies",
+          "body": "Management Studies is the single most popular business-related subject for international students, focused on how organisations actually run — strategy, structure, decision-making, and the practical mechanics of finance, marketing, and HR. Because the skills are largely industry-agnostic, graduates have a lot of flexibility when choosing where to build a career, which is a major part of why this subject draws such a large applicant pool every year."
+        },
+        {
+          "rank": 5,
+          "name": "Design Studies",
+          "body": "Design Studies suits students who enjoy solving problems in a visual, hands-on way — the subject spans everything from graphic and industrial design to fashion and textiles. Alongside discipline-specific technique, students build practical skills in computer-aided design and get real experience responding to client-style briefs, which keeps the degree closely tied to how design work actually happens in industry."
+        },
+        {
+          "rank": 6,
+          "name": "Psychology",
+          "body": "Psychology is popular with UK and international students alike — it's the study of how people think, feel, and behave, covering both the science behind the mind and the research methods used to study it. Beyond subject knowledge, it builds strong critical thinking, problem-solving, and data-handling skills, and it opens into a genuinely wide range of careers, from clinical psychology and therapy to research and data analysis roles."
+        },
+        {
+          "rank": 7,
+          "name": "Politics",
+          "body": "Politics stays relevant no matter where a student is from, which likely explains its consistent popularity with international applicants. Studying it in the UK means direct exposure to a dense political landscape — active parties, legislative institutions, think tanks, and NGOs — alongside strong research expertise at UK universities. Most programmes also allow real flexibility to tailor the degree toward a student's specific interests within the field."
+        },
+        {
+          "rank": 8,
+          "name": "Business and Management",
+          "body": "For students who can't quite decide between a pure Business or Management degree, this combined subject covers both — how a business operates as an organisation and the wider environment it operates within. It's also commonly studied alongside another subject entirely, with popular combinations including Economics, Information Systems, and International Studies, giving students room to specialise while keeping a broad business foundation."
+        },
+        {
+          "rank": 9,
+          "name": "Medicine",
+          "body": "Medicine draws a huge number of applications, but it's also by far the most competitive subject on this list — only a small share of international applicants receive an offer. UK Medicine degrees are held to strict standards set by the General Medical Council, many give students early exposure to real patients, and the research environment at UK medical schools is genuinely world-class. Given how competitive entry is, it's worth going in with a backup plan — whether that's a graduate-entry route later or a related career path."
+        },
+        {
+          "rank": 10,
+          "name": "Business Studies",
+          "body": "Business Studies rounds out the top ten and is the broadest of the three business-related entries on this list, covering economics, accounting, marketing, and management in one degree. It builds skills that carry across almost any industry — from how a workplace is organised to how people and resources are managed — making it a practical, flexible starting point for students who know they want a business career but aren't yet sure which corner of it."
+        }
+      ],
       "guidanceIntro": "The UK offers thousands of undergraduate and postgraduate courses. When deciding on a course, it helps to think about your academic and career goals, whether the course offers work placements or research opportunities, and what current or former students say about their experience.",
       "guidanceQuestions": [
         "What subject are you most interested in, and how does it align with your future ambitions?",

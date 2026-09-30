@@ -3,6 +3,7 @@ import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
 import universities from "@/data/universities.json";
 import programs from "@/data/programs.json";
+import CourseGallery from "@/components/country/CourseGallery";
 
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
@@ -47,22 +48,51 @@ export default async function CoursesPage({ params }) {
 
   return (
     <main>
-      {/* ================= PAGE HEADER ================= */}
-      <section className="bg-[#101820] px-5 py-14 text-center">
-        <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/60">
-          {country.name}
-        </p>
-        <h1 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-          Compare Universities & Courses
-        </h1>
-        <p className="mx-auto mt-4 max-w-xl text-sm text-white/70 md:text-base">
-          Not just a list of universities — a comparison of career outcomes, cost,
-          and how likely graduates are to settle after finishing their degree.
-        </p>
+      <CourseGallery label={country.name} />
+
+      {/* ================= TOP 10 COURSES =================
+          Country-wide overview, not tied to a single university — pulled
+          from details.courses.topCourses, which is per-country data (UK's
+          list won't be the same as Canada's, Australia's, etc). */}
+      <section className="bg-white px-5 py-14 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
+            Course Guide
+          </p>
+          <h2 className="mt-3 text-2xl font-bold text-[#101820] md:text-4xl lg:text-5xl">
+            Top 10 Courses in {country.name}
+          </h2>
+          <p className="mt-4 text-sm text-[#101820]/70 md:text-base">
+            The most in-demand subjects among international students, based on
+            application volume — a useful starting point if you're still deciding
+            what to study.
+          </p>
+
+          <div className="mt-8">
+            {details.courses.topCourses.map((course) => (
+              <div
+                key={course.rank}
+                className="flex gap-5 border-b border-[#101820]/10 py-6 first:pt-0 last:border-0"
+              >
+                <span className="shrink-0 text-3xl font-bold text-[#C9A227] md:text-4xl">
+                  {course.rank}
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold text-[#101820] md:text-xl">
+                    {course.name}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#101820]/75 md:text-base">
+                    {course.body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ================= GUIDANCE SECTION ================= */}
-      <section className="bg-white px-5 py-14 lg:px-8">
+      <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
             Choosing a Course
@@ -84,8 +114,8 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= QUICK COMPARISON TABLE ================= */}
-      <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
+      {/* ================= QUICK COMPARISON TABLE — kept as-is for now ================= */}
+      <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
             At a Glance
@@ -130,10 +160,10 @@ export default async function CoursesPage({ params }) {
       </section>
 
       {/* ================= TOP 5 ================= */}
-      <TierSection title="Top 5 Universities" universities={topFive} />
+      <TierSection title="Top 5 Universities" universities={topFive} tone="alt" />
 
       {/* ================= NEXT 5 ================= */}
-      <TierSection title="Next 5 Universities" universities={nextFive} tone="alt" />
+      <TierSection title="Next 5 Universities" universities={nextFive} />
     </main>
   );
 }
