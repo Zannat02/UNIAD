@@ -37,7 +37,7 @@ export default async function AboutPage({ params }) {
 
   return (
     <main>
-      {/* ================= BANNER ================= */}
+      {/*  BANNER  */}
       <BannerImage src={about.bannerImage} label={`About ${country.name}`} />
 
       <section className="bg-[#101820] px-5 py-10 text-center">
@@ -49,7 +49,7 @@ export default async function AboutPage({ params }) {
         </h1>
       </section>
 
-      {/* ================= INTRO PARAGRAPH ================= */}
+      {/*  INTRO PARAGRAPH  */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-sm leading-relaxed text-[#101820]/80 md:text-base">
@@ -58,7 +58,7 @@ export default async function AboutPage({ params }) {
         </div>
       </section>
 
-      {/* ================= HIGHLIGHT (e.g. UK Nations) — text left, image right, sage tint ================= */}
+      {/*  HIGHLIGHT  */}
       {about.highlight && (
         <EditorialSplit
           heading={about.highlight.title}
@@ -74,7 +74,7 @@ export default async function AboutPage({ params }) {
         />
       )}
 
-      {/* ================= TOPICS — alternating image/text rows, alternating bg ================= */}
+      {/*  TOPICS  */}
       {about.topics.map((topic, i) => (
         <EditorialSplit
           key={topic.slug}
@@ -88,7 +88,7 @@ export default async function AboutPage({ params }) {
         />
       ))}
 
-      {/* ================= BACK ================= */}
+      {/*  BACK  */}
       <section className="bg-white px-5 py-10 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <Link
