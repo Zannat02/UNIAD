@@ -34,6 +34,18 @@ body {
   animation: navShine 1.3s ease-in-out forwards;
 }
 
+/* ---- Hide scrollbar while keeping the element scrollable (used for the
+   Top Universities table on mobile — scroll still works, bar stays hidden) ---- */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* ---- Course gallery: staggered fade/slide-in on load ---- */
 @keyframes galleryFadeIn {
   from {
@@ -50,7 +62,7 @@ body {
   animation: galleryFadeIn 0.6s ease-out both;
 }
 
-/* ---- Navbar bottom line-এর অনবরত শাইন ইফেক্ট (বাম থেকে ডানে) ---- */
+
 @keyframes navLineShine {
   0% {
     transform: translateX(-120%);
@@ -66,7 +78,7 @@ body {
   animation: navLineShine 3.5s ease-in-out infinite;
 }
 
-/* ---- CTA বাটনের hover/click শাইন ইফেক্ট ---- */
+
 .nav-cta-shine::before {
   content: "";
   position: absolute;

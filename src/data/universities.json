@@ -3,170 +3,80 @@
     "slug": "university-of-oxford",
     "name": "University of Oxford",
     "countrySlug": "uk",
-    "tier": "top-5",
-    "tierRank": 1,
-    "image": null,
-    "ranking": "QS World Rank #3",
-    "shortDescription": "One of the world's oldest and most prestigious universities, strong across nearly every subject.",
+    "rank": 1,
     "website": "https://www.ox.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Strong",
-      "valueForMoney": "Moderate",
-      "settlementChance": "Good",
-      "tagline": "Exceptional reputation, high tuition, strong career doors across all fields."
-    }
+    "topCourses": ["Law", "Philosophy, Politics and Economics (PPE)", "Medicine", "English Literature"]
   },
   {
     "slug": "university-of-cambridge",
     "name": "University of Cambridge",
     "countrySlug": "uk",
-    "tier": "top-5",
-    "tierRank": 2,
-    "image": null,
-    "ranking": "QS World Rank #2",
-    "shortDescription": "World-leading research university with an exceptional academic reputation.",
+    "rank": 2,
     "website": "https://www.cam.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Strong",
-      "valueForMoney": "Moderate",
-      "settlementChance": "Good",
-      "tagline": "Elite reputation and research strength, especially in sciences and engineering."
-    }
+    "topCourses": ["Engineering", "Mathematics", "Natural Sciences", "Computer Science"]
   },
   {
     "slug": "imperial-college-london",
     "name": "Imperial College London",
     "countrySlug": "uk",
-    "tier": "top-5",
-    "tierRank": 3,
-    "image": null,
-    "ranking": "QS World Rank #6",
-    "shortDescription": "Specialist in science, engineering, medicine, and business — strong industry links.",
+    "rank": 3,
     "website": "https://www.imperial.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Strong",
-      "valueForMoney": "Moderate",
-      "settlementChance": "Good",
-      "tagline": "Best fit for STEM careers, especially tech and engineering employers."
-    }
+    "topCourses": ["Engineering", "Medicine", "Natural Sciences", "Business"]
   },
   {
     "slug": "ucl",
     "name": "University College London (UCL)",
     "countrySlug": "uk",
-    "tier": "top-5",
-    "tierRank": 4,
-    "image": null,
-    "ranking": "QS World Rank #9",
-    "shortDescription": "Large, diverse research university in central London with broad subject strength.",
+    "rank": 4,
     "website": "https://www.ucl.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Strong",
-      "valueForMoney": "Moderate",
-      "settlementChance": "Good",
-      "tagline": "Strong across a wide subject range, benefits from a central London location."
-    }
-  },
-  {
-    "slug": "london-school-of-economics",
-    "name": "London School of Economics (LSE)",
-    "countrySlug": "uk",
-    "tier": "top-5",
-    "tierRank": 5,
-    "image": null,
-    "ranking": "QS World Rank #45",
-    "shortDescription": "Specialist social science institution, globally known for economics, finance, and politics.",
-    "website": "https://www.lse.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Strong",
-      "valueForMoney": "Moderate",
-      "settlementChance": "Good",
-      "tagline": "The strongest choice specifically for finance, economics, and policy careers."
-    }
-  },
-  {
-    "slug": "university-of-manchester",
-    "name": "University of Manchester",
-    "countrySlug": "uk",
-    "tier": "next-5",
-    "tierRank": 6,
-    "image": null,
-    "ranking": "QS World Rank #32",
-    "shortDescription": "One of the UK's largest research-intensive universities with a strong global brand.",
-    "website": "https://www.manchester.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Good",
-      "valueForMoney": "Good",
-      "settlementChance": "Good",
-      "tagline": "Strong balance of reputation and tuition cost, large alumni network."
-    }
-  },
-  {
-    "slug": "kings-college-london",
-    "name": "King's College London",
-    "countrySlug": "uk",
-    "tier": "next-5",
-    "tierRank": 7,
-    "image": null,
-    "ranking": "QS World Rank #40",
-    "shortDescription": "Central London university especially strong in medicine, law, and humanities.",
-    "website": "https://www.kcl.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Good",
-      "valueForMoney": "Moderate",
-      "settlementChance": "Good",
-      "tagline": "Strong for medicine, law, and humanities, with a prime London location."
-    }
+    "topCourses": ["Architecture", "Medicine", "Education", "Anthropology"]
   },
   {
     "slug": "university-of-edinburgh",
     "name": "University of Edinburgh",
     "countrySlug": "uk",
-    "tier": "next-5",
-    "tierRank": 8,
-    "image": null,
-    "ranking": "QS World Rank #22",
-    "shortDescription": "Scotland's leading research university with a broad, strong subject range.",
+    "rank": 5,
     "website": "https://www.ed.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Good",
-      "valueForMoney": "Good",
-      "settlementChance": "Good",
-      "tagline": "High reputation with comparatively lower living costs than London."
-    }
+    "topCourses": ["Artificial Intelligence (AI)", "Medicine", "Informatics", "Arts & Humanities"]
+  },
+  {
+    "slug": "kings-college-london",
+    "name": "King's College London",
+    "countrySlug": "uk",
+    "rank": 6,
+    "website": "https://www.kcl.ac.uk",
+    "topCourses": ["Law", "Nursing", "Dentistry", "War Studies"]
+  },
+  {
+    "slug": "university-of-manchester",
+    "name": "University of Manchester",
+    "countrySlug": "uk",
+    "rank": 7,
+    "website": "https://www.manchester.ac.uk",
+    "topCourses": ["Materials Science", "Business & Management", "Pharmacy", "Development Studies"]
+  },
+  {
+    "slug": "london-school-of-economics",
+    "name": "London School of Economics (LSE)",
+    "countrySlug": "uk",
+    "rank": 8,
+    "website": "https://www.lse.ac.uk",
+    "topCourses": ["Economics", "Finance", "Political Science", "Sociology"]
   },
   {
     "slug": "university-of-bristol",
     "name": "University of Bristol",
     "countrySlug": "uk",
-    "tier": "next-5",
-    "tierRank": 9,
-    "image": null,
-    "ranking": "QS World Rank #55",
-    "shortDescription": "Research-intensive university known for engineering, sciences, and student experience.",
+    "rank": 9,
     "website": "https://www.bristol.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Good",
-      "valueForMoney": "Good",
-      "settlementChance": "Moderate",
-      "tagline": "Strong engineering programs at a more moderate cost than London universities."
-    }
+    "topCourses": ["Earth Sciences", "Veterinary Science", "Geography", "Engineering"]
   },
   {
-    "slug": "university-of-leeds",
-    "name": "University of Leeds",
+    "slug": "university-of-warwick",
+    "name": "University of Warwick",
     "countrySlug": "uk",
-    "tier": "next-5",
-    "tierRank": 10,
-    "image": null,
-    "ranking": "QS World Rank #75",
-    "shortDescription": "Large Russell Group university known for strong student support and research.",
-    "website": "https://www.leeds.ac.uk",
-    "comparisonHighlights": {
-      "careerGrowth": "Good",
-      "valueForMoney": "Good",
-      "settlementChance": "Moderate",
-      "tagline": "Good all-round value — solid reputation with lower living costs than London."
-    }
+    "rank": 10,
+    "website": "https://warwick.ac.uk",
+    "topCourses": ["Business & Management", "Mathematics", "Economics", "Statistics"]
   }
 ]
