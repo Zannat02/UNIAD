@@ -40,6 +40,9 @@ export default async function CoursesPage({ params }) {
     <main>
       <CourseGallery label={country.name} />
 
+      {/* ================= TOP 10 COURSES =================
+          Country-wide overview, not tied to one university. Pulled from
+          details.courses.topCourses — per-country data. */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -77,7 +80,9 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-   
+      {/* ================= TOP UNIVERSITIES TABLE =================
+          University name links straight to the real university website;
+          courses column comes from universities.json's topCourses. */}
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -89,7 +94,7 @@ export default async function CoursesPage({ params }) {
 
           <div
             className="no-scrollbar mt-8 overflow-x-auto rounded-2xl border border-[#101820]/10 bg-white"
-            style={{ touchAction: "pan-x" }}
+            style={{ touchAction: "pan-x pan-y" }}
           >
             <table className="w-full min-w-[720px] text-left text-sm">
               <thead>
@@ -122,7 +127,7 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-   
+      {/* ================= GUIDANCE SECTION — same heading text for every country ================= */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -145,9 +150,15 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      
+      {/* ================= BACK + CAREER GROWTH / SETTLE CTAs =================
+          Career-growth and settle pages are stubs for now — real content
+          (career growth data, post-study settlement data) comes later. */}
       <section className="bg-[#FAF9F4] px-5 py-10 lg:px-8">
-       
+        {/* Mobile: back button on its own row, the two CTAs stacked below it
+            side by side (each taking equal width). sm and up: all three sit
+            in one row together — the `sm:contents` trick makes the wrapper
+            div "disappear" at that breakpoint so its two children become
+            direct flex items next to the back button. */}
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
           <Link
             href={`/study-in/${country.slug}`}
