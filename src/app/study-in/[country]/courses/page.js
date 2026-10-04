@@ -40,9 +40,6 @@ export default async function CoursesPage({ params }) {
     <main>
       <CourseGallery label={country.name} />
 
-      {/* ================= TOP 10 COURSES =================
-          Country-wide overview, not tied to one university. Pulled from
-          details.courses.topCourses — per-country data. */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -80,10 +77,92 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= TOP UNIVERSITIES TABLE =================
-          University name links straight to the real university website;
-          courses column comes from universities.json's topCourses. */}
+   
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
+            Admissions
+          </p>
+          <h2 className="mt-3 text-2xl font-bold text-[#101820] md:text-4xl lg:text-5xl">
+            Entry Requirements & Intakes
+          </h2>
+
+          <div className="mt-10 grid gap-10 md:grid-cols-2">
+            {/* Entry Requirements */}
+            <div>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="h-5 w-5 text-[#C9A227]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" />
+                  <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+                </svg>
+                <h3 className="text-lg font-bold text-[#101820]">Entry Requirements</h3>
+              </div>
+
+              <dl className="mt-5 space-y-5">
+                <div className="border-l-2 border-[#9DAD98] pl-4">
+                  <dt className="text-sm font-semibold uppercase tracking-wide text-[#101820]/50">
+                    Undergraduate
+                  </dt>
+                  <dd className="mt-1 text-sm leading-relaxed text-[#101820]/80 md:text-base">
+                    {details.courses.entryRequirements.undergraduate}
+                  </dd>
+                </div>
+                <div className="border-l-2 border-[#9DAD98] pl-4">
+                  <dt className="text-sm font-semibold uppercase tracking-wide text-[#101820]/50">
+                    Postgraduate
+                  </dt>
+                  <dd className="mt-1 text-sm leading-relaxed text-[#101820]/80 md:text-base">
+                    {details.courses.entryRequirements.postgraduate}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            {/* Intakes */}
+            <div>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="h-5 w-5 text-[#C9A227]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                <h3 className="text-lg font-bold text-[#101820]">Intakes</h3>
+              </div>
+
+              <div className="mt-5 space-y-4">
+                {details.courses.intakes.map((intake) => (
+                  <div
+                    key={intake.name}
+                    className="rounded-xl border border-[#101820]/10 bg-white p-5"
+                  >
+                    <p className="text-sm font-bold text-[#101820]">{intake.name}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-[#101820]/75 md:text-base">
+                      {intake.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
             University Guide
@@ -96,11 +175,12 @@ export default async function CoursesPage({ params }) {
             className="no-scrollbar mt-8 overflow-x-auto rounded-2xl border border-[#101820]/10 bg-white"
             style={{ touchAction: "pan-x pan-y" }}
           >
-            <table className="w-full min-w-[720px] text-left text-sm">
+            <table className="w-full min-w-[860px] text-left text-sm">
               <thead>
                 <tr className="border-b border-[#101820]/10 text-[11px] uppercase tracking-wide text-[#101820]/50">
                   <th className="w-[220px] px-5 py-4">University</th>
                   <th className="px-5 py-4">Top Courses</th>
+                  <th className="w-[180px] px-5 py-4">Tuition Range</th>
                 </tr>
               </thead>
               <tbody>
@@ -119,16 +199,23 @@ export default async function CoursesPage({ params }) {
                     <td className="px-5 py-4 align-top text-[#101820]/75">
                       {uni.topCourses.join(", ")}
                     </td>
+                    <td className="whitespace-nowrap px-5 py-4 align-top font-medium text-[#101820]">
+                      {uni.tuitionRange}
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          <p className="mt-3 text-xs text-[#101820]/50">
+            Tuition is an approximate range for most courses — Medicine, MBA, and a
+            few specialist programmes typically cost more. Always confirm the exact
+            fee on the university&apos;s own course page.
+          </p>
         </div>
       </section>
 
-      {/* ================= GUIDANCE SECTION — same heading text for every country ================= */}
-      <section className="bg-white px-5 py-14 lg:px-8">
+      <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
             Choosing a Course
@@ -150,15 +237,9 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= BACK + CAREER GROWTH / SETTLE CTAs =================
-          Career-growth and settle pages are stubs for now — real content
-          (career growth data, post-study settlement data) comes later. */}
+      
       <section className="bg-[#FAF9F4] px-5 py-10 lg:px-8">
-        {/* Mobile: back button on its own row, the two CTAs stacked below it
-            side by side (each taking equal width). sm and up: all three sit
-            in one row together — the `sm:contents` trick makes the wrapper
-            div "disappear" at that breakpoint so its two children become
-            direct flex items next to the back button. */}
+       
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
           <Link
             href={`/study-in/${country.slug}`}

@@ -180,6 +180,20 @@
           "body": "Business Studies rounds out the top ten and is the broadest of the three business-related entries on this list, covering economics, accounting, marketing, and management in one degree. It builds skills that carry across almost any industry — from how a workplace is organised to how people and resources are managed — making it a practical, flexible starting point for students who know they want a business career but aren't yet sure which corner of it."
         }
       ],
+      "entryRequirements": {
+        "undergraduate": "Typically A-Levels (grades roughly BBB to AAA depending on how competitive the course is) or an equivalent qualification like the IB (around 32–38 points), plus English proficiency — usually IELTS 6.0–6.5 overall.",
+        "postgraduate": "Usually a 2:1 Bachelor's degree (or equivalent GPA) in a related subject, plus English proficiency — typically IELTS 6.5–7.0 overall, sometimes higher for competitive courses like Law or Medicine."
+      },
+      "intakes": [
+        {
+          "name": "September — Main Intake",
+          "detail": "The main intake, with by far the widest choice of courses, accommodation, and student life. The main UCAS deadline for most undergraduate courses is mid-January (around 15 January) for that year's September start — but Oxford, Cambridge, and Medicine/Dentistry/Veterinary courses close earlier, around mid-October."
+        },
+        {
+          "name": "January — Second Intake",
+          "detail": "A smaller intake — not every university or course offers a January start. Useful if you missed the September deadline, need more time to arrange your visa finances, or specifically want to start mid-year, though course choice is more limited."
+        }
+      ],
       "guidanceIntro": "The UK offers thousands of undergraduate and postgraduate courses. When deciding on a course, it helps to think about your academic and career goals, whether the course offers work placements or research opportunities, and what current or former students say about their experience.",
       "guidanceQuestions": [
         "What subject are you most interested in, and how does it align with your future ambitions?",

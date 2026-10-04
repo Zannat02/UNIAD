@@ -5,7 +5,8 @@
     "countrySlug": "uk",
     "rank": 1,
     "website": "https://www.ox.ac.uk",
-    "topCourses": ["Law", "Philosophy, Politics and Economics (PPE)", "Medicine", "English Literature"]
+    "topCourses": ["Law", "Philosophy, Politics and Economics (PPE)", "Medicine", "English Literature"],
+    "tuitionRange": "£35,000 – £60,000/year"
   },
   {
     "slug": "university-of-cambridge",
@@ -13,7 +14,8 @@
     "countrySlug": "uk",
     "rank": 2,
     "website": "https://www.cam.ac.uk",
-    "topCourses": ["Engineering", "Mathematics", "Natural Sciences", "Computer Science"]
+    "topCourses": ["Engineering", "Mathematics", "Natural Sciences", "Computer Science"],
+    "tuitionRange": "£27,000 – £41,000/year"
   },
   {
     "slug": "imperial-college-london",
@@ -21,7 +23,8 @@
     "countrySlug": "uk",
     "rank": 3,
     "website": "https://www.imperial.ac.uk",
-    "topCourses": ["Engineering", "Medicine", "Natural Sciences", "Business"]
+    "topCourses": ["Engineering", "Medicine", "Natural Sciences", "Business"],
+    "tuitionRange": "£34,000 – £48,000/year"
   },
   {
     "slug": "ucl",
@@ -29,7 +32,8 @@
     "countrySlug": "uk",
     "rank": 4,
     "website": "https://www.ucl.ac.uk",
-    "topCourses": ["Architecture", "Medicine", "Education", "Anthropology"]
+    "topCourses": ["Architecture", "Medicine", "Education", "Anthropology"],
+    "tuitionRange": "£24,000 – £40,000/year"
   },
   {
     "slug": "university-of-edinburgh",
@@ -37,7 +41,8 @@
     "countrySlug": "uk",
     "rank": 5,
     "website": "https://www.ed.ac.uk",
-    "topCourses": ["Artificial Intelligence (AI)", "Medicine", "Informatics", "Arts & Humanities"]
+    "topCourses": ["Artificial Intelligence (AI)", "Medicine", "Informatics", "Arts & Humanities"],
+    "tuitionRange": "£24,000 – £36,000/year"
   },
   {
     "slug": "kings-college-london",
@@ -45,7 +50,8 @@
     "countrySlug": "uk",
     "rank": 6,
     "website": "https://www.kcl.ac.uk",
-    "topCourses": ["Law", "Nursing", "Dentistry", "War Studies"]
+    "topCourses": ["Law", "Nursing", "Dentistry", "War Studies"],
+    "tuitionRange": "£26,000 – £38,000/year"
   },
   {
     "slug": "university-of-manchester",
@@ -53,7 +59,8 @@
     "countrySlug": "uk",
     "rank": 7,
     "website": "https://www.manchester.ac.uk",
-    "topCourses": ["Materials Science", "Business & Management", "Pharmacy", "Development Studies"]
+    "topCourses": ["Materials Science", "Business & Management", "Pharmacy", "Development Studies"],
+    "tuitionRange": "£23,000 – £32,000/year"
   },
   {
     "slug": "london-school-of-economics",
@@ -61,7 +68,8 @@
     "countrySlug": "uk",
     "rank": 8,
     "website": "https://www.lse.ac.uk",
-    "topCourses": ["Economics", "Finance", "Political Science", "Sociology"]
+    "topCourses": ["Economics", "Finance", "Political Science", "Sociology"],
+    "tuitionRange": "£25,000 – £35,000/year"
   },
   {
     "slug": "university-of-bristol",
@@ -69,7 +77,8 @@
     "countrySlug": "uk",
     "rank": 9,
     "website": "https://www.bristol.ac.uk",
-    "topCourses": ["Earth Sciences", "Veterinary Science", "Geography", "Engineering"]
+    "topCourses": ["Earth Sciences", "Veterinary Science", "Geography", "Engineering"],
+    "tuitionRange": "£24,000 – £32,000/year"
   },
   {
     "slug": "university-of-warwick",
@@ -77,6 +86,7 @@
     "countrySlug": "uk",
     "rank": 10,
     "website": "https://warwick.ac.uk",
-    "topCourses": ["Business & Management", "Mathematics", "Economics", "Statistics"]
+    "topCourses": ["Business & Management", "Mathematics", "Economics", "Statistics"],
+    "tuitionRange": "£26,000 – £35,000/year"
   }
 ]

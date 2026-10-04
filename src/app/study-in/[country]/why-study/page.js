@@ -38,7 +38,7 @@ export default async function WhyStudyPage({ params }) {
 
   return (
     <main className="bg-[#9DAD98]">
-      {/* ================= CONTAINED BANNER =================
+      {/*  CONTAINED BANNER 
          */}
       <section className="px-5 pt-10 lg:px-8">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl">
@@ -46,7 +46,7 @@ export default async function WhyStudyPage({ params }) {
         </div>
       </section>
 
-      {/* ================= PAGE TITLE ================= */}
+      {/*  PAGE TITLE  */}
       <section className="px-5 pb-4 pt-10 text-center lg:px-8">
         <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#101820]/60">
           {country.name}
@@ -57,7 +57,7 @@ export default async function WhyStudyPage({ params }) {
       
       </section>
 
-      {/* ================= 7 REASONS — alternating layout =================
+      {/*  7 REASONS — alternating layout 
           */}
       {whyStudy.reasons.map((reason, i) => (
         <EditorialSplit
@@ -72,7 +72,7 @@ export default async function WhyStudyPage({ params }) {
         />
       ))}
 
-      {/* ================= BACK ================= */}
+      {/*BACK  */}
       <section className="px-5 py-10 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <Link
