@@ -3,6 +3,7 @@ import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
 import universities from "@/data/universities.json";
 import CourseGallery from "@/components/country/CourseGallery";
+import FaqAccordion from "@/components/country/FaqAccordion";
 
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
@@ -40,6 +41,9 @@ export default async function CoursesPage({ params }) {
     <main>
       <CourseGallery label={country.name} />
 
+      {/* ================= TOP 10 COURSES =================
+          Country-wide overview, not tied to one university. Pulled from
+          details.courses.topCourses — per-country data. */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -77,7 +81,10 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-   
+      {/* ================= ADMISSIONS AT A GLANCE =================
+          Country-level info (not tied to one university) — entry
+          requirements on the left, intakes/deadlines on the right.
+          Two columns on md+, stacks to one column on mobile. */}
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -162,6 +169,9 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
+      {/* ================= TOP UNIVERSITIES TABLE =================
+          University name links straight to the real university website;
+          courses column comes from universities.json's topCourses. */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -215,6 +225,7 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
+      {/* ================= GUIDANCE SECTION — same heading text for every country ================= */}
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -237,9 +248,36 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      
+      {/* ================= FAQ =================
+          Same questions for every country (matched by faq.id), only the
+          answers change per country. One item open at a time. */}
+      <section className="bg-white px-5 py-14 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
+            FAQ
+          </p>
+          <h2 className="mt-3 text-2xl font-bold text-[#101820] md:text-4xl lg:text-5xl">
+            Common Questions About Studying in {country.name}
+          </h2>
+          <p className="mt-4 text-sm text-[#101820]/70 md:text-base">
+            Quick answers to what students usually ask before they apply.
+          </p>
+
+          <div className="mt-8">
+            <FaqAccordion faqs={details.courses.faqs} />
+          </div>
+        </div>
+      </section>
+
+      {/* ================= BACK + CAREER GROWTH / SETTLE CTAs =================
+          Career-growth and settle pages are stubs for now — real content
+          (career growth data, post-study settlement data) comes later. */}
       <section className="bg-[#FAF9F4] px-5 py-10 lg:px-8">
-       
+        {/* Mobile: back button on its own row, the two CTAs stacked below it
+            side by side (each taking equal width). sm and up: all three sit
+            in one row together — the `sm:contents` trick makes the wrapper
+            div "disappear" at that breakpoint so its two children become
+            direct flex items next to the back button. */}
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
           <Link
             href={`/study-in/${country.slug}`}

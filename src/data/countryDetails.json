@@ -84,7 +84,7 @@
         },
         {
           "heading": "Stay and Work After You Graduate",
-          "body": "Finishing your degree doesn't mean your time in the UK has to end. The Graduate Route visa lets international students stay on for up to 2 years after an undergraduate or Master's degree — or 3 years after a PhD — to work or look for work, with no job offer required to apply.\n\nThis gives you real breathing room to build UK work experience, grow your professional network, and — if things go well — move into a longer-term skilled worker visa with an employer willing to sponsor you.",
+          "body": "Finishing your degree doesn't mean your time in the UK has to end. The Graduate Route visa lets international students stay on for up to 18 months after an undergraduate or Master's degree — or 3 years after a PhD — to work or look for work, with no job offer required to apply.\n\nThis gives you real breathing room to build UK work experience, grow your professional network, and — if things go well — move into a longer-term skilled worker visa with an employer willing to sponsor you.",
           "highlight": true
         },
         {
@@ -121,7 +121,7 @@
         },
         {
           "title": "After Graduation",
-          "summary": "Graduates can apply for the Graduate Route visa, allowing up to 2 years (3 for PhD graduates) to work or job-hunt in the UK after finishing a degree.",
+          "summary": "Graduates can apply for the Graduate Route visa, allowing up to 18 months (3 years for PhD graduates) to work or job-hunt in the UK after finishing a degree.",
           "body": "The Graduate Route doesn't require a job offer to apply — it simply extends your stay so you can look for work, gain experience, or transition into a skilled worker visa later if you find a sponsoring employer. Career services at most UK universities offer CV reviews, interview practice, and employer networking events, which are worth using well before your final semester."
         }
       ]
@@ -192,6 +192,48 @@
         {
           "name": "January — Second Intake",
           "detail": "A smaller intake — not every university or course offers a January start. Useful if you missed the September deadline, need more time to arrange your visa finances, or specifically want to start mid-year, though course choice is more limited."
+        }
+      ],
+      "faqs": [
+        {
+          "id": "english-requirements",
+          "question": "What English score do I need, and can I apply without IELTS?",
+          "answer": "Most UK universities ask for around IELTS 6.0–6.5 overall for undergraduate courses and 6.5–7.0 for postgraduate ones, with higher scores for subjects like Law or Medicine. IELTS isn't the only route, though — many universities also accept TOEFL, PTE, the Duolingo English Test, their own English test, or a Medium of Instruction (MOI) letter if your previous degree was taught in English.\n\nOne thing to watch: getting a waiver from the university doesn't automatically settle your visa. Your university has to confirm your English level when it issues your CAS, so ask them exactly what they'll accept before you pay for any test."
+        },
+        {
+          "id": "visa-funds",
+          "question": "How much money do I need to show for the student visa?",
+          "answer": "You need to show two amounts: your first-year tuition fee that's still unpaid, plus living costs for up to nine months. Right now the living-cost figure is £1,529 a month for London and £1,171 a month outside London — roughly £13,761 and £10,539 over nine months. These go up for applications made on or after 30 November 2026, to £1,570 and £1,203 a month.\n\nThe money needs to stay in your account for at least 28 days in a row before you apply. The visa fee (£558) and the Immigration Health Surcharge (£776 per year of your visa) are separate, so keep a little extra on top."
+        },
+        {
+          "id": "scholarships",
+          "question": "Are there scholarships for international students?",
+          "answer": "Yes, but competition is strong, so it pays to look early. The best-known are Chevening (UK government, fully funded one-year master's, with applications usually opening around August), Commonwealth Scholarships (for students from eligible Commonwealth countries) and GREAT Scholarships (at least £10,000 towards tuition for a one-year master's, for students from selected countries, applied for through participating universities).\n\nOn top of these, most universities run their own merit awards and bursaries, often with smaller applicant pools. Some are considered automatically when you apply; others have a deadline soon after your offer. Government scholarships can close 9–12 months before the course starts, so check dates well ahead of your application."
+        },
+        {
+          "id": "when-to-apply",
+          "question": "When should I start applying?",
+          "answer": "Start about 9–12 months before your course begins. For a September start, the main UCAS deadline for most undergraduate courses is around 15 January, while Oxford, Cambridge and Medicine, Dentistry and Veterinary courses close earlier, around mid-October. Postgraduate applications go straight to the university, and popular courses can fill up before any official deadline.\n\nApplying early also gives you a better shot at scholarships and university accommodation. Once you hold an offer and your CAS, you can apply for the visa — it's usually decided in about three weeks from outside the UK, but leave extra time in case documents are queried."
+        },
+        {
+          "id": "family-dependants",
+          "question": "Can I bring my spouse or children with me?",
+          "answer": "For most students, no. Since 1 January 2024, only students on PhD or other research-based postgraduate courses lasting nine months or more — and government-sponsored students — can bring a partner or children. If you're on a bachelor's or taught master's course, dependants can't join you on a Student visa.\n\nIf you do qualify, each family member needs their own visa application and extra funds shown on top of yours. It's worth checking this before you choose a course, because it can change which programme makes sense for your family."
+        },
+        {
+          "id": "accommodation",
+          "question": "Where will I live, and how much will it cost?",
+          "answer": "Many first-year international students start in university halls, which are the simplest option — bills are often included and you're close to campus. Other choices are private student accommodation (purpose-built blocks) or a room in a shared house.\n\nPrices vary a lot by city. University halls average around £190 a week across the UK and closer to £280 in London, while a room in a shared house is often cheaper, though bills may be extra. Book as early as you can once you have an offer — the better-value rooms tend to go first."
+        },
+        {
+          "id": "visa-refusal",
+          "question": "What if my visa application is refused?",
+          "answer": "A refusal isn't always the end of the road. Your refusal letter will explain exactly why, so read it carefully and tell your university right away — they can advise you and, if a fresh application makes sense, issue a new CAS (the old one can't be reused after a refusal).\n\nThere's no general right of appeal for a Student visa applied for from outside the UK. If you believe the Home Office made a mistake, you can ask for an administrative review within 28 days. That can take a long time, though, so many students find it faster to fix the problem — for example, the funds or a missing document — and apply again."
+        },
+        {
+          "id": "apply-without-consultancy",
+          "question": "Can I apply on my own, or do I need a consultancy?",
+          "answer": "You can absolutely apply on your own — universities accept direct applications, undergraduate courses go through UCAS, and the visa is applied for on the official GOV.UK website. Plenty of students do it themselves.\n\nThe catch is that there are many moving parts: choosing the right course, meeting deadlines, timing your funds for the 28-day rule, getting your CAS, and preparing visa documents. Small mistakes here are a common reason applications get delayed or refused. A good counsellor can save you time and catch problems early — and if you'd like a second pair of eyes on your plan, that's exactly what our team is here for."
         }
       ],
       "guidanceIntro": "The UK offers thousands of undergraduate and postgraduate courses. When deciding on a course, it helps to think about your academic and career goals, whether the course offers work placements or research opportunities, and what current or former students say about their experience.",
