@@ -1,0 +1,140 @@
+[
+  {
+    "slug": "uk",
+    "bannerImage": "/images/countries/uk/career-growth-banner.jpg",
+    "intro": "Choosing where to study is also choosing where your career starts. In the UK, that story has three parts: what graduates earn, how you can gain real work experience while you study, and what you are allowed to do once your degree is finished. This page walks through all three, using official graduate data wherever it exists.",
+
+    "stats": [
+      {
+        "value": "£30,000",
+        "label": "Typical graduate salary",
+        "note": "Median full-time pay 15 months after graduating (HESA, 2023/24)"
+      },
+      {
+        "value": "81%",
+        "label": "Graduates in work",
+        "note": "57% in full-time jobs, 15 months after graduating (HESA, 2023/24)"
+      },
+      {
+        "value": "18 months",
+        "label": "Post-study work visa",
+        "note": "Graduate Route for bachelor's and master's, 3 years for PhD, no job offer needed"
+      },
+      {
+        "value": "20 hrs",
+        "label": "Work per week while studying",
+        "note": "Degree-level courses in term time; full-time in vacations"
+      }
+    ],
+
+    "salaryChart": {
+      "title": "What graduates earn, by subject",
+      "caption": "Median yearly pay of full-time graduates 15 months after finishing a first degree, across all job levels.",
+      "source": "HESA Graduate Outcomes, 2023/24",
+      "currency": "£",
+      "items": [
+        { "subject": "Medicine & dentistry", "salary": 43749 },
+        { "subject": "Veterinary sciences", "salary": 34990 },
+        { "subject": "Engineering & technology", "salary": 32478 },
+        { "subject": "Mathematical sciences", "salary": 32450 },
+        { "subject": "Computing", "salary": 31788 },
+        { "subject": "Education & teaching", "salary": 30980 },
+        { "subject": "Subjects allied to medicine", "salary": 30000 },
+        { "subject": "Social sciences", "salary": 30000 },
+        { "subject": "Physical sciences", "salary": 29997 },
+        { "subject": "Architecture, building & planning", "salary": 29450 },
+        { "subject": "Biological & sport sciences", "salary": 26990 },
+        { "subject": "Agriculture & food studies", "salary": 26850 },
+        { "subject": "Psychology", "salary": 26244 },
+        { "subject": "Media, journalism & communications", "salary": 25938 }
+      ],
+      "notes": [
+        "These figures cover all UK graduates, not only international students, and are not adjusted for inflation.",
+        "A subject's average hides a wide range. Pay depends heavily on the industry, the employer and the city you work in."
+      ]
+    },
+
+    "workExperience": {
+      "title": "Gain experience before you graduate",
+      "intro": "Employers like graduates who have already worked. The UK gives you two main ways to build that experience during your degree.",
+      "items": [
+        {
+          "title": "A placement year",
+          "text": "Some degrees include a year working in industry, usually between your second and final year. It gives you real responsibility, useful contacts, and sometimes a paid bursary. Many companies treat it like a long interview, so a strong placement can lead to a job offer. If the placement is a compulsory, assessed part of your course, it generally does not count towards your weekly work limit, as long as it is no more than half of your total course length. Always check with your university's international office first."
+        },
+        {
+          "title": "Part-time work and internships",
+          "text": "On a Student visa you can usually work up to 20 hours a week in term time on a degree-level course, and full-time during official vacations and after your course ends. A 'week' runs Monday to Sunday and the limit is strict, so keep your own record of hours. Self-employment and freelance work are not allowed. Postgraduate students on part-time courses cannot work at all."
+        },
+        {
+          "title": "Know your term dates",
+          "text": "The rules depend on what your university counts as 'term time'. This can differ for postgraduate and research students, especially over summer. Ask your university to confirm your exact dates before you accept any full-time work."
+        }
+      ]
+    },
+
+    "journey": {
+      "title": "Your career journey, step by step",
+      "steps": [
+        {
+          "title": "During your degree",
+          "text": "Work part-time within your hours, join societies, and use your university careers service for CV help and mock interviews."
+        },
+        {
+          "title": "Placement or internship",
+          "text": "Add a placement year or a vacation internship if your course allows it. This is where many graduate job offers begin."
+        },
+        {
+          "title": "Final year",
+          "text": "Start applying early. Many graduate schemes open in autumn, so begin around September or October rather than waiting until you finish."
+        },
+        {
+          "title": "Graduate Route visa",
+          "text": "Once your university confirms you have completed your course, you can apply from inside the UK for the Graduate Route. You do not need a job offer. A decision usually comes within about 8 weeks, and the application costs £937 plus the health surcharge (usually £1,035 per year)."
+        },
+        {
+          "title": "Long-term career",
+          "text": "If an employer with a sponsor licence offers you a suitable job, you can switch to a Skilled Worker visa and stay longer."
+        }
+      ]
+    },
+
+    "jobSearch": {
+      "title": "How international graduates find jobs",
+      "tips": [
+        {
+          "title": "Start early",
+          "text": "Begin networking and applying at the start of your final year, not after graduation day."
+        },
+        {
+          "title": "Use your careers service",
+          "text": "Most UK universities offer CV reviews, interview practice and employer events, often with advisers who know the international student rules."
+        },
+        {
+          "title": "Check the sponsor register",
+          "text": "If you will need a visa sponsor later, check that an employer is on the official Home Office list of licensed sponsors before you spend time on an application."
+        },
+        {
+          "title": "Look beyond the famous names",
+          "text": "The biggest graduate employers get tens of thousands of applications. Mid-sized companies often have less competition and can still sponsor workers."
+        },
+        {
+          "title": "Use a UK-style CV",
+          "text": "Keep it to about two pages, skip the photo and date of birth, and list achievements rather than just duties."
+        }
+      ]
+    },
+
+    "keyTip": {
+      "title": "Do not miss this deadline",
+      "text": "You can only apply for the Graduate Route from inside the UK, and you must do it before your Student visa expires. Plan the date as soon as your course ends, because a missed deadline cannot be fixed afterwards."
+    },
+
+    "sources": [
+      "HESA Graduate Outcomes 2023/24",
+      "GOV.UK: Graduate visa",
+      "UKCISA: working during your studies"
+    ],
+    "lastChecked": "October 2026"
+  }
+]
