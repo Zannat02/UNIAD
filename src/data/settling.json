@@ -1,0 +1,247 @@
+[
+  {
+    "slug": "uk",
+  
+    "intro": "For many students, the real question is not just 'can I study there?' but 'can I build a life there?'. In the UK, staying long-term does not happen in one step. It is a path with several stages, each with its own visa and rules. This page shows the route from student to permanent resident to citizen, what each stage asks of you, and where the rules are still changing.",
+
+    "stats": [
+      {
+        "value": "18 months",
+        "label": "Graduate visa",
+        "note": "After a bachelor's or master's (3 years after a PhD), for applications from 1 January 2027"
+      },
+      {
+        "value": "5 years",
+        "label": "Usual wait for permanent residence",
+        "note": "On the Skilled Worker route, under the rules in force today"
+      },
+      {
+        "value": "10 years",
+        "label": "Planned standard wait",
+        "note": "Under the earned settlement reforms, which are still being decided"
+      },
+      {
+        "value": "12 months",
+        "label": "Permanent residence to citizenship",
+        "note": "The usual wait before you can apply for citizenship"
+      }
+    ],
+
+    "ruleWatch": {
+      "title": "Settlement rules are changing",
+      "text": "The government has announced 'earned settlement' reforms. For most people, the standard wait for permanent residence would double from 5 years to 10, with shorter routes for some, such as doctors and nurses and high earners. The details are not final: the public consultation closed in February 2026 and the government is still considering the responses. One change is already confirmed. From March 2027, the English level needed for most settlement applications rises. Until the new rules are published, the timings on this page are the ones in force today, so check the official pages before you plan around any date.",
+      "status": "under-review",
+      "asOf": "October 2026",
+      "link": {
+        "label": "GOV.UK: Earned settlement consultation",
+        "url": "https://www.gov.uk/government/consultations/earned-settlement"
+      }
+    },
+
+    "roadmap": {
+      "title": "Your route to staying in the UK",
+      "intro": "Most international students follow the same path. Each stage leads to the next, and some stages count towards permanent residence while others do not.",
+      "steps": [
+        {
+          "title": "Student visa",
+          "duration": "Length of your course",
+          "text": "This is where you start. Your study time usually does not count towards the 5-year permanent residence clock on the Skilled Worker route.",
+          "link": {
+            "label": "GOV.UK: Student visa",
+            "url": "https://www.gov.uk/student-visa"
+          }
+        },
+        {
+          "title": "Graduate visa",
+          "duration": "18 months (3 years for PhD)",
+          "text": "A bridge that lets you work or look for work after your degree, with no employer sponsor needed. You must apply from inside the UK before your Student visa ends, and it cannot be extended. It is not a route to permanent residence by itself, and this time usually does not count towards the 5-year clock.",
+          "link": {
+            "label": "GOV.UK: Graduate visa",
+            "url": "https://www.gov.uk/graduate-visa"
+          }
+        },
+        {
+          "title": "Skilled Worker visa",
+          "duration": "Up to 5 years at a time",
+          "text": "This is the main route to staying long-term. You need a job offer from an employer with a sponsor licence, in an eligible job, and English at B2 level (a UK degree can prove this, otherwise an approved test). The salary must meet the minimum, currently £41,700 or the job's going rate if higher. If you are under 26, or a recent graduate (on a Student or Graduate visa, or within two years of one), the minimum is lower: at least £33,400, and at least 70% of the going rate if that is higher. In that case your total stay in the UK cannot be more than four years, including time on a Graduate visa.",
+          "link": {
+            "label": "GOV.UK: Skilled Worker visa",
+            "url": "https://www.gov.uk/skilled-worker-visa"
+          }
+        },
+        {
+          "title": "Permanent residence (ILR)",
+          "duration": "Usually after 5 years on the Skilled Worker route (under review)",
+          "text": "Indefinite Leave to Remain lets you live, work and study in the UK with no time limit. Today you can usually apply after 5 years on the Skilled Worker route, if you meet the other requirements. Two changes are coming: from March 2027, English for most settlement applications rises to B2 and must be proved with an approved test, and the earned settlement reforms may lengthen the wait. Check the latest rules before you rely on any date.",
+          "link": {
+            "label": "GOV.UK: Settle in the UK",
+            "url": "https://www.gov.uk/settle-in-the-uk"
+          }
+        },
+        {
+          "title": "British citizenship",
+          "duration": "Usually 12 months after permanent residence",
+          "text": "Most people need to have lived in the UK for 5 years and held permanent residence for at least 12 months (there is no 12-month wait if you are married to a British citizen). You also need to pass the Life in the UK test, prove your English, be of good character, and plan to keep living in the UK. Time spent abroad counts against you: generally no more than 450 days in the 5 years, and no more than 90 days in the last 12 months.",
+          "link": {
+            "label": "GOV.UK: Apply for citizenship",
+            "url": "https://www.gov.uk/apply-citizenship-indefinite-leave-to-remain"
+          }
+        }
+      ]
+    },
+
+    "checklist": {
+      "title": "What you will need to settle",
+      "intro": "Whichever route you take, these are the things that decide whether your plan works.",
+      "items": [
+        {
+          "title": "A sponsor and an eligible job",
+          "text": "Most people need an employer with a Home Office sponsor licence, offering a job that is on the official list of eligible occupations. Check the sponsor list early.",
+          "link": {
+            "label": "GOV.UK: Register of licensed sponsors",
+            "url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+          }
+        },
+        {
+          "title": "The right salary",
+          "text": "Your pay has to reach the minimum for your job and situation. Recent graduates get a lower minimum for a limited time.",
+          "link": {
+            "label": "GOV.UK: Skilled Worker visa, your job",
+            "url": "https://www.gov.uk/skilled-worker-visa"
+          }
+        },
+        {
+          "title": "English at the right level",
+          "text": "B2 for the Skilled Worker visa, and a UK degree can count as proof. For permanent residence, the level rises to B2 from March 2027, proved with an approved test. For citizenship you also have to prove your English, so check the level on the official page.",
+          "link": {
+            "label": "GOV.UK: Higher standard of English to settle",
+            "url": "https://www.gov.uk/government/news/higher-standard-of-english-now-required-to-settle-in-the-uk"
+          }
+        },
+        {
+          "title": "Continuous residence",
+          "text": "Long periods outside the UK can break your 'continuous residence' for permanent residence. The exact limit is set in the official guidance, so check it before you plan long trips home.",
+          "link": {
+            "label": "GOV.UK: Settle in the UK",
+            "url": "https://www.gov.uk/settle-in-the-uk"
+          }
+        },
+        {
+          "title": "Records you can show",
+          "text": "Keep contracts, payslips, your visa documents and your travel dates. You will need them for every application."
+        },
+        {
+          "title": "No reliance on benefits",
+          "text": "Student, Graduate and Skilled Worker visas generally do not allow claiming most public benefits (public funds)."
+        }
+      ]
+    },
+
+    "otherRoutes": {
+      "title": "Other ways to stay",
+      "intro": "The Graduate to Skilled Worker path is the most common, but it is not the only one.",
+      "items": [
+        {
+          "title": "Switch straight to a Skilled Worker visa",
+          "text": "If an employer sponsors you before you graduate, you can switch from your Student visa directly and start your 5-year clock sooner, without using the Graduate visa.",
+          "link": {
+            "label": "GOV.UK: Skilled Worker visa",
+            "url": "https://www.gov.uk/skilled-worker-visa"
+          }
+        },
+        {
+          "title": "Global Talent visa",
+          "text": "For people recognised as leaders, or promising future leaders, in fields like academia and research, arts and culture, or digital technology. It needs an endorsement from an approved body, and it has no language or minimum salary requirements.",
+          "link": {
+            "label": "GOV.UK: Global Talent visa",
+            "url": "https://www.gov.uk/global-talent"
+          }
+        },
+        {
+          "title": "Innovator Founder visa",
+          "text": "For people who want to start a new business in the UK. Your business idea must be approved by an endorsing body first.",
+          "link": {
+            "label": "GOV.UK: Innovator Founder visa",
+            "url": "https://www.gov.uk/innovator-founder-visa"
+          }
+        }
+      ]
+    },
+
+    "faqs": [
+      {
+        "id": "does-study-time-count",
+        "question": "Does my study time count towards permanent residence?",
+        "answer": "On the usual 5-year Skilled Worker route, it generally does not. That clock starts when your Skilled Worker visa begins, and time on a Student or Graduate visa is not included.\n\nThere is an older 10-year long-residence route where more lawful time can count, but its future is uncertain under the earned settlement reforms. Check the official settlement page for the current position.",
+        "link": {
+          "label": "GOV.UK: Settle in the UK",
+          "url": "https://www.gov.uk/settle-in-the-uk"
+        }
+      },
+      {
+        "id": "no-job-found",
+        "question": "What if I do not find a job during my Graduate visa?",
+        "answer": "The Graduate visa cannot be extended, so when it ends you need to move to another visa or leave the UK. The usual next step is a sponsored Skilled Worker job, but there are other routes if you qualify, such as Global Talent or Innovator Founder.\n\nThis is why it helps to start your job search early, in your final year, and to keep your options open."
+      },
+      {
+        "id": "how-long-permanent-residence",
+        "question": "How long does it take to become a permanent resident?",
+        "answer": "Under today's rules, a typical path is your course, then up to 18 months on a Graduate visa, then 5 years on a Skilled Worker visa. For someone doing a one-year master's, that adds up to roughly seven to eight years from arrival. You can shorten it by moving onto a Skilled Worker visa earlier.\n\nThe earned settlement reforms could lengthen this, so treat any timeline as an estimate."
+      },
+      {
+        "id": "when-citizenship",
+        "question": "When can I apply for British citizenship?",
+        "answer": "Usually after you have lived in the UK for 5 years and held permanent residence for at least 12 months. If you are married to a British citizen, you do not need to wait the 12 months. You also need to pass the Life in the UK test, prove your English, be of good character and intend to keep living in the UK.\n\nThere are limits on time spent abroad: generally no more than 450 days in the 5 years before you apply, and no more than 90 days in the last 12 months.",
+        "link": {
+          "label": "GOV.UK: Apply for citizenship",
+          "url": "https://www.gov.uk/apply-citizenship-indefinite-leave-to-remain"
+        }
+      },
+      {
+        "id": "family-after-study",
+        "question": "Can my family stay or join me after I graduate?",
+        "answer": "Possibly, but it depends on your visa. On both the Graduate visa and the Skilled Worker visa, your partner and children may be able to apply to stay or join you, as long as they meet the eligibility requirements.\n\nBecause the rules differ by visa and have changed recently, check the exact eligibility for your situation before you make plans for your family.",
+        "link": {
+          "label": "GOV.UK: Graduate visa",
+          "url": "https://www.gov.uk/graduate-visa"
+        }
+      },
+      {
+        "id": "will-rules-change",
+        "question": "Will the rules change before I qualify?",
+        "answer": "Parts of them already are. From March 2027, the English level for most settlement applications rises to B2. The government has also announced earned settlement reforms: a 10-year standard wait for most people, with shorter routes for some, such as doctors and nurses (5 years) and high earners and entrepreneurs (3 years). The details are not final.\n\nThe sensible approach is to plan with the rules in force today, avoid depending on a single fixed date, and re-check the official pages as you go.",
+        "link": {
+          "label": "GOV.UK: Earned settlement consultation",
+          "url": "https://www.gov.uk/government/consultations/earned-settlement"
+        }
+      }
+    ],
+
+    "officialLinks": {
+      "title": "Check the official pages",
+      "intro": "Visa rules, fees and dates change often. Before you plan around any number or date on this page, confirm it on the official pages below.",
+      "links": [
+        { "topic": "Graduate visa", "label": "GOV.UK: Graduate visa", "url": "https://www.gov.uk/graduate-visa" },
+        { "topic": "Skilled Worker visa", "label": "GOV.UK: Skilled Worker visa", "url": "https://www.gov.uk/skilled-worker-visa" },
+        { "topic": "Permanent residence", "label": "GOV.UK: Settle in the UK", "url": "https://www.gov.uk/settle-in-the-uk" },
+        { "topic": "Earned settlement reforms", "label": "GOV.UK: Earned settlement consultation", "url": "https://www.gov.uk/government/consultations/earned-settlement" },
+        { "topic": "New English requirement", "label": "GOV.UK: Higher standard of English to settle", "url": "https://www.gov.uk/government/news/higher-standard-of-english-now-required-to-settle-in-the-uk" },
+        { "topic": "British citizenship", "label": "GOV.UK: Apply for citizenship", "url": "https://www.gov.uk/apply-citizenship-indefinite-leave-to-remain" },
+        { "topic": "Finding a sponsor", "label": "GOV.UK: Register of licensed sponsors", "url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers" },
+        { "topic": "Global Talent visa", "label": "GOV.UK: Global Talent visa", "url": "https://www.gov.uk/global-talent" },
+        { "topic": "Innovator Founder visa", "label": "GOV.UK: Innovator Founder visa", "url": "https://www.gov.uk/innovator-founder-visa" },
+        { "topic": "Advice for international students", "label": "UKCISA: Skilled Worker route", "url": "https://www.ukcisa.org.uk/student-advice/working/skilled-worker-route/" }
+      ]
+    },
+
+    "sources": [
+      { "label": "GOV.UK: Graduate visa", "url": "https://www.gov.uk/graduate-visa" },
+      { "label": "GOV.UK: Skilled Worker visa", "url": "https://www.gov.uk/skilled-worker-visa" },
+      { "label": "GOV.UK: Apply for citizenship", "url": "https://www.gov.uk/apply-citizenship-indefinite-leave-to-remain" },
+      { "label": "GOV.UK: Earned settlement consultation", "url": "https://www.gov.uk/government/consultations/earned-settlement" },
+      { "label": "GOV.UK: Higher standard of English to settle", "url": "https://www.gov.uk/government/news/higher-standard-of-english-now-required-to-settle-in-the-uk" },
+      { "label": "UKCISA: Skilled Worker route", "url": "https://www.ukcisa.org.uk/student-advice/working/skilled-worker-route/" }
+    ],
+    "lastChecked": "October 2026"
+  }
+]

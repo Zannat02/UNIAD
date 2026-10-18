@@ -169,7 +169,7 @@ export default async function CareerGrowthPage({ params }) {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-16 top-10 h-48 w-48 rounded-full border-2 border-[#101820]/15"
+          className="pointer-events-none absolute -right-33 lg:-right-16 top-10 h-48 w-48 rounded-full border-2 border-[#101820]/15"
         />
 
         <div className="relative mx-auto max-w-4xl">
@@ -282,14 +282,14 @@ export default async function CareerGrowthPage({ params }) {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-24 bottom-32 h-80 w-80 rounded-full border-2 border-[#9DAD98]/50"
+          className="pointer-events-none absolute  -right-73  md:-right-43 bottom-32 h-80 w-80 rounded-full border border-[#9DAD98]/50"
         />
 
         <div className="relative mx-auto max-w-4xl">
           <h2 className={`text-center text-[#101820] ${H2}`}>{career.journey.title}</h2>
 
           <ol className="relative mt-12">
-            {/* the line: left edge on mobile, centre on md+ */}
+         
             <span
               aria-hidden="true"
               className="absolute bottom-0 left-4 top-0 w-px bg-[#C9A227]/50 md:left-1/2"
@@ -327,7 +327,7 @@ export default async function CareerGrowthPage({ params }) {
         <Wave fill={NAVY} />
       </section>
 
-      {/*  KEY TIP (navy)*/}
+  
       <section className="relative overflow-hidden bg-[#101820] px-5 pb-24 pt-14 md:pb-32 lg:px-8">
         <div
           aria-hidden="true"
