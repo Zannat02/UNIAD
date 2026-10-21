@@ -481,19 +481,19 @@ export default async function SettlingPage({ params }) {
       {/*  BACK + SOURCES  */}
       <section className="st-a relative bg-[#FAF9F4] px-5 pb-14 lg:px-8">
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
-          <Link
+          {/* <Link
             href={`/study-in/${country.slug}/courses`}
             aria-label={`Back to ${country.name} courses`}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#101820]/15 text-[#101820] transition-colors hover:border-[#101820]/40"
           >
             <span aria-hidden="true">&larr;</span>
-          </Link>
+          </Link> */}
 
           <Link
             href={`/study-in/${country.slug}/courses/career-growth`}
             className="w-full rounded-lg bg-[#101820] px-6 py-3 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto"
           >
-            Career Growth in {country.name}
+             &larr; Career Growth in {country.name}
           </Link>
         </div>
 

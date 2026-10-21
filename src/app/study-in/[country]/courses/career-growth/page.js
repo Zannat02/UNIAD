@@ -439,13 +439,13 @@ export default async function CareerGrowthPage({ params }) {
      
       <section className="bg-[#FAF9F4] px-5 pb-14 pt-6 lg:px-8">
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
-          <Link
+          {/* <Link
             href={`/study-in/${country.slug}/courses`}
             aria-label={`Back to ${country.name} courses`}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#101820]/15 text-[#101820] transition-colors hover:border-[#101820]/40"
           >
             <span aria-hidden="true">&larr;</span>
-          </Link>
+          </Link> */}
 
           <Link
             href={`/study-in/${country.slug}/courses/settle-after-study`}

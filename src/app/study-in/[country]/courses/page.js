@@ -40,11 +40,26 @@ export default async function CoursesPage({ params }) {
   return (
     <main>
       <CourseGallery label={country.name} />
+      
 
-      {/* ================= TOP 10 COURSES =================
-          Country-wide overview, not tied to one university. Pulled from
-          details.courses.topCourses — per-country data. */}
+      {/*  TOP 10 COURSES 
+         */}
       <section className="bg-white px-5 py-14 lg:px-8">
+
+        <div className="-mt-4 px-5 pb-2 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <Link
+            href={`/study-in/${country.slug}`}
+            aria-label={`Back to ${country.name} overview`}
+            className="inline-flex items-center gap-2 rounded-full bg-[#101820] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-opacity hover:opacity-90"
+          >
+            <span aria-hidden="true" className="text-base text-[#C9A227]">&larr;</span>
+            Back
+          </Link>
+        </div>
+      </div>
+
+
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
             Course Guide
@@ -81,10 +96,7 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= ADMISSIONS AT A GLANCE =================
-          Country-level info (not tied to one university) — entry
-          requirements on the left, intakes/deadlines on the right.
-          Two columns on md+, stacks to one column on mobile. */}
+      {/*  ADMISSIONS AT A GLANCE */}
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -169,9 +181,7 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= TOP UNIVERSITIES TABLE =================
-          University name links straight to the real university website;
-          courses column comes from universities.json's topCourses. */}
+      {/*  TOP UNIVERSITIES TABLE . */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -225,7 +235,7 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= GUIDANCE SECTION — same heading text for every country ================= */}
+      {/* GUIDANCE SECTION */}
       <section className="bg-[#FAF9F4] px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -248,9 +258,8 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= FAQ =================
-          Same questions for every country (matched by faq.id), only the
-          answers change per country. One item open at a time. */}
+
+
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#C9A227]">
@@ -269,30 +278,19 @@ export default async function CoursesPage({ params }) {
         </div>
       </section>
 
-      {/* ================= BACK + CAREER GROWTH / SETTLE CTAs =================
-          Career-growth and settle pages are stubs for now — real content
-          (career growth data, post-study settlement data) comes later. */}
+
       <section className="bg-[#FAF9F4] px-5 py-10 lg:px-8">
-        {/* Mobile: back button on its own row, the two CTAs stacked below it
-            side by side (each taking equal width). sm and up: all three sit
-            in one row together — the `sm:contents` trick makes the wrapper
-            div "disappear" at that breakpoint so its two children become
-            direct flex items next to the back button. */}
+
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
-          <Link
-            href={`/study-in/${country.slug}`}
-            aria-label={`Back to ${country.name} overview`}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#101820]/15 text-[#101820] transition-colors hover:border-[#101820]/40"
-          >
-            <span aria-hidden="true">&larr;</span>
-          </Link>
+       
 
           <div className="flex flex-col gap-3 sm:contents">
             <Link
               href={`/study-in/${country.slug}/courses/career-growth`}
               className="w-full rounded-lg bg-[#101820] px-6 py-3 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto"
             >
-              International Student Career Growth
+              International Student Career Growth {country.name}
+               
             </Link>
 
             <Link
