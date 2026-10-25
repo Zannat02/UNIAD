@@ -3,39 +3,64 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import SelectDropdown from "@/components/ui/SelectDropdown";
+import subjectCategories from "@/data/subjectCategories.json";
+import nav from "@/data/navigation.json";
 
-// placeholder options — swap these for real data once it's ready
-const SUBJECTS = [
-  "Business & Management",
-  "Computer Science & IT",
-  "Engineering",
-  "Health & Medicine",
-  "Law",
-  "Arts & Design",
-];
+const DESTINATION_ITEMS =
+  nav.dropdowns.find((d) => d.key === "destinations")?.items ?? [];
 
-const DESTINATIONS = [
-  "United Kingdom",
-  "Canada",
-  "Australia",
-  "USA",
-  "Japan",
-  "China",
-  "New Zealand",
-  "Europe",
-];
 
-export default function ProgramSearch() {
+const slugOf = (item) => item.href.replace("/study-in/", "");
+const SOON = " (coming soon)";
+
+export default function ProgramSearch({ availability }) {
   const router = useRouter();
   const [subject, setSubject] = useState("");
   const [destination, setDestination] = useState("");
+  const [hint, setHint] = useState("");
+
+  const subjectsByCountry = availability?.subjects ?? {};
+  const withData = availability?.countriesWithData ?? [];
+
+  const hasData = (item) => withData.includes(slugOf(item));
+  const placeLabel = (item) => (hasData(item) ? item.label : item.label + SOON);
+  const destinationOptions = DESTINATION_ITEMS.map(placeLabel);
+
+  const place = DESTINATION_ITEMS.find((i) => placeLabel(i) === destination);
+  const category = subjectCategories.find((c) => c.label === subject);
+
+  const subjectInCountry = (cat, item) =>
+    subjectsByCountry[cat.slug]?.includes(slugOf(item));
+
+
+  const subjectOptions = subjectCategories
+    .filter((c) => !place || !hasData(place) || subjectInCountry(c, place))
+    .map((c) => c.label);
+
+  function handleDestination(label) {
+    setDestination(label);
+    setHint("");
+
+  
+    const item = DESTINATION_ITEMS.find((i) => placeLabel(i) === label);
+    if (item && category && hasData(item) && !subjectInCountry(category, item)) {
+      setSubject("");
+    }
+  }
 
   function handleSearch(e) {
     e.preventDefault();
-    const params = new URLSearchParams();
-    if (subject) params.set("subject", subject);
-    if (destination) params.set("country", destination);
-    router.push(`/programs?${params.toString()}`);
+
+    if (category) {
+    
+      const query = place ? `?country=${slugOf(place)}` : "";
+      router.push(`/programs/${category.slug}${query}`);
+    } else if (place) {
+
+      router.push(`/study-in/${slugOf(place)}/courses`);
+    } else {
+      setHint("Pick a subject or a destination to search.");
+    }
   }
 
   return (
@@ -52,15 +77,18 @@ export default function ProgramSearch() {
           <div className="flex flex-col items-center gap-3 lg:flex-row lg:items-stretch lg:justify-center">
             <SelectDropdown
               value={subject}
-              onChange={setSubject}
-              options={SUBJECTS}
+              onChange={(v) => {
+                setSubject(v);
+                setHint("");
+              }}
+              options={subjectOptions}
               placeholder="What would you like to study?"
             />
 
             <SelectDropdown
               value={destination}
-              onChange={setDestination}
-              options={DESTINATIONS}
+              onChange={handleDestination}
+              options={destinationOptions}
               placeholder="Where do you want to study?"
             />
 
@@ -71,6 +99,12 @@ export default function ProgramSearch() {
               Search
             </button>
           </div>
+
+          {hint && (
+            <p role="alert" className="mt-3 text-sm text-[#101820]/70">
+              {hint}
+            </p>
+          )}
         </form>
       </div>
     </section>

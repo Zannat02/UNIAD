@@ -2,13 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/**
- * A styled stand-in for <select>. Native selects hand icon spacing and
- * open-direction (up vs down) entirely to the browser/OS — this component
- * exists so we can guarantee: (1) proper gap between the text and the
- * chevron icon, and (2) the option list always opens downward, regardless
- * of how much space is left below it on screen.
- */
 export default function SelectDropdown({ value, onChange, options, placeholder }) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
@@ -53,8 +46,6 @@ export default function SelectDropdown({ value, onChange, options, placeholder }
         </svg>
       </button>
 
-      {/* option list — anchored to top-full so it is always forced open
-          below the trigger, never above it */}
       <div
         role="listbox"
         className={`absolute left-0 top-full z-30 mt-2 w-full overflow-hidden rounded-lg border border-[#9DAD98]/60 bg-white shadow-lg transition-all duration-150 ${
@@ -63,7 +54,7 @@ export default function SelectDropdown({ value, onChange, options, placeholder }
             : "pointer-events-none -translate-y-1 opacity-0"
         }`}
       >
-        <ul className="max-h-60 overflow-y-auto py-1">
+        <ul className="max-h-60 overflow-y-auto">
           {options.map((option) => (
             <li key={option}>
               <button

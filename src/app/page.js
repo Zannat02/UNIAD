@@ -1,5 +1,6 @@
 import CinematicHero from "@/components/home/bannar/CinematicHero";
 import ProgramSearch from "@/components/home/programSearch/ProgramSearch";
+import { getAvailability } from "@/lib/programs";
 
 
 
@@ -8,7 +9,7 @@ export default function Home() {
     <main>
    
   <CinematicHero /> 
-  <ProgramSearch></ProgramSearch>
+ <ProgramSearch availability={getAvailability()} />
      
     </main>
   );

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "business-management",
+    "label": "Business & Management",
+    "tagline": "Learn how organisations run, from strategy and finance to marketing and people.",
+    "keywords": ["business", "management", "finance", "economics", "accounting"]
+  },
+  {
+    "slug": "computer-science-it",
+    "label": "Computer Science & IT",
+    "tagline": "Build software, work with data and explore areas like artificial intelligence.",
+    "keywords": ["computer", "informatics", "artificial intelligence", "software", "data"]
+  },
+  {
+    "slug": "engineering",
+    "label": "Engineering",
+    "tagline": "Design and build the systems, machines and materials the modern world relies on.",
+    "keywords": ["engineering", "materials"]
+  },
+  {
+    "slug": "health-medicine",
+    "label": "Health & Medicine",
+    "tagline": "Train for careers that care for people, from medicine and nursing to pharmacy and veterinary science.",
+    "keywords": ["medicine", "dentistry", "nursing", "pharmacy", "veterinary"]
+  },
+  {
+    "slug": "law",
+    "label": "Law",
+    "tagline": "Study how legal systems work and build skills in research, argument and negotiation.",
+    "keywords": ["law", "legal"]
+  },
+  {
+    "slug": "science-mathematics",
+    "label": "Science & Mathematics",
+    "tagline": "Explore how the natural world works, using mathematics, data and experiment.",
+    "keywords": ["mathematics", "natural sciences", "earth sciences", "statistics", "physics", "chemistry"]
+  },
+  {
+    "slug": "social-sciences-politics",
+    "label": "Social Sciences & Politics",
+    "tagline": "Understand people, societies and power, from politics and psychology to education and geography.",
+    "keywords": ["politic", "psychology", "sociology", "anthropology", "war studies", "development studies", "education", "geography", "philosophy"]
+  },
+  {
+    "slug": "arts-design-architecture",
+    "label": "Arts, Design & Architecture",
+    "tagline": "Develop creative and critical skills in literature, the arts, design and the built environment.",
+    "keywords": ["arts", "humanities", "literature", "architecture", "design"]
+  }
+]
