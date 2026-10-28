@@ -163,7 +163,8 @@ export default async function SettlingPage({ params }) {
 
       {/*  RULE WATCH  */}
       <section className="st-a st-sec relative overflow-hidden bg-[#FAF9F4] px-5 lg:px-8">
-        <Pattern kind="dots" id="st-watch" className="text-[#101820]/[0.12]" />
+       
+       
 
         <div className="relative mx-auto max-w-4xl rounded-2xl border-2 border-dashed border-[#C9A227] bg-white/80 p-6 md:p-10">
           <div className="flex flex-wrap items-center gap-3">

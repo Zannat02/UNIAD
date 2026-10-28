@@ -3,9 +3,7 @@ import "./globals.css";
 import Footer from "@/components/layout/Footer";
 
 
-export const metadata = {
-  colorScheme: "light",
-};
+export const viewport = { colorScheme: "light" };
 
 export default function RootLayout({ children }) {
   return (

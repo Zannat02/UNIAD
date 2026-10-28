@@ -29,8 +29,7 @@ export function sectionsFor(category) {
     .filter((section) => section.courses.length > 0 || section.unis.length > 0);
 }
 
-// Small summary for the search form:
-// { subjects: { "law": ["uk"], ... }, countriesWithData: ["uk"] }
+
 export function getAvailability() {
   const subjects = {};
   const withData = new Set();
