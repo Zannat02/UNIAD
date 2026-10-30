@@ -279,12 +279,12 @@ export default async function CoursesPage({ params }) {
       </section>
 
 
-      <section className="bg-[#FAF9F4] px-5 py-10 lg:px-8">
+     <section className="bg-[#FAF9F4] px-5 pb-20 pt-10 md:pb-28 lg:px-8">
 
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
        
 
-          <div className="flex flex-col gap-3 sm:contents">
+          <div className="flex flex-col gap-3  sm:contents">
             <Link
               href={`/study-in/${country.slug}/courses/career-growth`}
               className="w-full rounded-lg bg-[#101820] px-6 py-3 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto"
