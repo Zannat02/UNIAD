@@ -33,11 +33,10 @@ export default async function AboutPage({ params }) {
   }
 
   const { details: about } = details.about;
-  const basePath = `/study-in/${country.slug}/about`;
 
   return (
     <main>
-      {/*  BANNER  */}
+      {/* BANNER */}
       <BannerImage src={about.bannerImage} label={`About ${country.name}`} />
 
       <section className="bg-[#101820] px-5 py-10 text-center">
@@ -49,7 +48,7 @@ export default async function AboutPage({ params }) {
         </h1>
       </section>
 
-      {/*  INTRO PARAGRAPH  */}
+      {/* INTRO PARAGRAPH */}
       <section className="bg-white px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <p className="text-sm leading-relaxed text-[#101820]/80 md:text-base">
@@ -58,7 +57,7 @@ export default async function AboutPage({ params }) {
         </div>
       </section>
 
-      {/*  HIGHLIGHT  */}
+      {/* HIGHLIGHT (title, text and image only, no button) */}
       {about.highlight && (
         <EditorialSplit
           heading={about.highlight.title}
@@ -67,19 +66,14 @@ export default async function AboutPage({ params }) {
           tone="sage"
           accent="sage"
           reverse
-          cta={{
-            label: about.highlight.ctaLabel,
-            href: `${basePath}/${about.highlight.ctaHref}`,
-          }}
         />
       )}
 
-      {/*  TOPICS  */}
+      {/* TOPICS (plain titles, each with its own image) */}
       {about.topics.map((topic, i) => (
         <EditorialSplit
           key={topic.slug}
           heading={topic.title}
-          headingHref={`${basePath}/${topic.slug}`}
           paragraphs={topic.body}
           image={topic.image}
           tone={i % 2 === 0 ? "offwhite" : "white"}
@@ -88,7 +82,7 @@ export default async function AboutPage({ params }) {
         />
       ))}
 
-      {/*  BACK  */}
+      {/* BACK */}
       <section className="bg-white px-5 py-10 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <Link
@@ -106,7 +100,6 @@ export default async function AboutPage({ params }) {
 
 function BannerImage({ src, label }) {
   if (src) {
-    // eslint-disable-next-line @next/next/no-img-element
     return (
       <div className="relative h-[32vh] min-h-[220px] w-full overflow-hidden bg-[#101820]">
         <img src={src} alt={label} className="h-full w-full object-cover opacity-70" />
