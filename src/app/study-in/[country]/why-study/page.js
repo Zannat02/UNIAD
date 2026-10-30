@@ -73,7 +73,7 @@ export default async function WhyStudyPage({ params }) {
       ))}
 
       {/*BACK  */}
-      <section className="px-5 py-10 lg:px-8">
+    <section className="px-5 pb-20 pt-10 md:pb-28 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <Link
             href={`/study-in/${country.slug}`}

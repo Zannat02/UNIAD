@@ -83,7 +83,7 @@ export default async function AboutPage({ params }) {
       ))}
 
       {/* BACK */}
-      <section className="bg-white px-5 py-10 lg:px-8">
+    <section className="bg-white px-5 pb-20 pt-10 md:pb-28 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <Link
             href={`/study-in/${country.slug}`}
