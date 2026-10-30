@@ -18,9 +18,8 @@
         { "label": "Japan", "href": "/study-in/japan" },
         { "label": "China", "href": "/study-in/china" },
         { "label": "New Zealand", "href": "/study-in/new-zealand" },
-        { "label": "Europe", "href": "/study-in/europe" }
-      ],
-      "viewAll": { "label": "View All Destinations", "href": "/destinations" }
+        { "label": "Germany", "href": "/study-in/germany" }
+      ]
     },
     {
       "key": "services",
@@ -47,5 +46,5 @@
       ]
     }
   ],
-  "cta": { "label": "Take the Country Quiz", "href": "/quiz" }
+  "cta": { "label": "Book an Appointment", "href": "/book-appointment" }
 }
