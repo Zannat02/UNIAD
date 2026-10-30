@@ -25,18 +25,18 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-16 text-white/70">
+<footer className="pointer-events-none relative -mt-10 text-white/70 md:-mt-16">
       {/* wavy top edge */}
       <svg
         aria-hidden="true"
         viewBox="0 0 1440 80"
         preserveAspectRatio="none"
-        className="-mb-px block h-10 w-full md:h-16"
+       className="pointer-events-none -mb-px block h-10 w-full md:h-16"
       >
         <path d="M0 40C240 80 480 0 720 32S1200 72 1440 24V80H0Z" fill="#101820" />
       </svg>
 
-      <div className="bg-[#101820] px-5 pb-8 pt-6 lg:px-8">
+     <div className="pointer-events-auto bg-[#101820] px-5 pb-8 pt-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4 lg:grid-cols-12">
             {/* brand */}
