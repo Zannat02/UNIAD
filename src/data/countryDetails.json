@@ -3,7 +3,6 @@
     "slug": "uk",
     "heroImage": null,
     "heroVideo": null,
-
     "about": {
       "preview": {
         "heading": "Study in the Home of World-Class Education",
@@ -13,7 +12,6 @@
       "details": {
         "bannerImage": "/images/countries/uk/about-banner.jpg",
         "introParagraph": "Beyond the world-class education and high-quality teaching, there is so much to love in the UK (also known by its full name: The United Kingdom of Great Britain and Northern Ireland). From our open and inclusive way of life to our ancient traditions, and our stunning landscapes to our unbeatable international cultural scene, you'll be well looked after — with a trustworthy police force, affordable transport connecting towns and cities across all four nations, and one of the most advanced healthcare systems in the world.",
-
         "highlight": {
           "slug": "nations",
           "title": "UK Nations",
@@ -22,7 +20,6 @@
           "ctaLabel": "Explore the four UK nations",
           "ctaHref": "nations"
         },
-
         "topics": [
           {
             "slug": "food",
@@ -63,7 +60,6 @@
         ]
       }
     },
-
     "whyStudy": {
       "summary": "Beyond the rankings, here's what actually matters day-to-day: what it costs to live, how easy it is to work part-time, and what happens after you graduate.",
       "bannerImage": "/images/countries/uk/why-study-banner.jpg",
@@ -126,7 +122,6 @@
         }
       ]
     },
-
     "courses": {
       "topCourses": [
         {
@@ -245,8 +240,542 @@
         "What do current and former students say about their experience in this course?"
       ],
       "externalResources": [
-        { "label": "UCAS course search", "url": "https://www.ucas.com/" },
-        { "label": "Discover Uni — compare course data", "url": "https://discoveruni.gov.uk/" }
+        {
+          "label": "UCAS course search",
+          "url": "https://www.ucas.com/"
+        },
+        {
+          "label": "Discover Uni — compare course data",
+          "url": "https://discoveruni.gov.uk/"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "canada",
+    "heroImage": null,
+    "heroVideo": null,
+    "about": {
+      "preview": {
+        "heading": "Study in a Country Known for Its Welcome",
+        "paragraph": "Canada has high-quality universities and colleges spread across ten provinces and three territories, from big, busy cities to quieter campus towns. You can pick a setting that fits how you want to live, and study in English, in French, or in both.\n\nOutside the classroom you'll find a safe, multicultural society, well-run public services, and plenty of open space for weekends away.",
+        "image": "/images/countries/canada/about-preview.jpg"
+      },
+      "details": {
+        "bannerImage": "/images/countries/canada/about-banner.jpg",
+        "introParagraph": "Beyond the strong teaching and well-regarded degrees, there is a lot to like about life in Canada. It is a country built by people from all over the world, and that shows in its neighbourhoods, food, festivals and everyday attitudes. Cities are safe and easy to settle into, public transport is widespread, and nature is never far away, whether that means a lake, a mountain trail or a quiet beach. Winters are cold, but campuses and cities are well set up for them, and most international students find the welcome warmer than the weather.",
+        "highlight": {
+          "slug": "provinces",
+          "title": "Provinces and Territories",
+          "body": "Canada is made up of ten provinces and three territories, each with its own character, climate and, in some cases, language. Most international students study in Ontario and British Columbia, home to cities like Toronto, Ottawa and Vancouver, but Quebec, Alberta, Nova Scotia and the Prairie provinces all have strong institutions and often lower living costs.\n\nEducation is run by each province, so tuition, health cover and the rules for attestation letters can differ depending on where you study. It's worth comparing provinces, not just universities, before you apply.",
+          "image": "/images/countries/canada/provinces.jpg"
+        },
+        "topics": [
+          {
+            "slug": "food",
+            "title": "Food",
+            "body": "Canadian food is a mix of local favourites and flavours from around the world. You'll find poutine, maple syrup treats, butter tarts and Nanaimo bars, but also excellent South Asian, East Asian, Middle Eastern, Caribbean and African food in almost every big city. Halal, kosher and vegetarian options are easy to find in most university cities.\n\nStudent budgets stretch furthest if you cook at home. Supermarkets such as Walmart, No Frills and Costco keep everyday groceries affordable, and many campuses have student-priced cafés and food banks. A typical grocery budget is around C$200 to C$600 a month, depending on how often you eat out.",
+            "image": "/images/countries/canada/food.jpg"
+          },
+          {
+            "slug": "weather",
+            "title": "Weather",
+            "body": "Canada has four clear seasons. Summers are warm and sunny, autumn brings brilliant colours, and winters can be properly cold and snowy, especially in Ontario, Quebec and the Prairies, where temperatures often fall well below freezing. The Pacific coast, including Vancouver, is milder but wetter.\n\nIf you come from a warmer country, the first winter takes some adjusting to. A good winter coat, insulated waterproof boots, gloves and layers you can add or remove are worth buying early. Many cities, such as Toronto and Montreal, also have indoor walkways and underground networks that make winter days easier.",
+            "image": "/images/countries/canada/weather.jpg"
+          },
+          {
+            "slug": "religion",
+            "title": "Religion",
+            "body": "Canada is a multi-faith, largely secular society where freedom of religion is protected and people of many beliefs live side by side. Most university cities have mosques, temples, gurdwaras, churches, synagogues and other places of worship within reach of campus, and student unions often run faith and cultural societies.\n\nCampuses are generally well set up for religious students, with prayer and multi-faith spaces, chaplaincy services and dietary options in dining halls. It's worth checking the services at your specific university once you have an offer.",
+            "image": "/images/countries/canada/religion.jpg"
+          },
+          {
+            "slug": "travel-and-transport",
+            "title": "Travel and Transport",
+            "body": "Canada is huge, but getting around your own city is straightforward. Toronto, Montreal, Vancouver and most other cities have buses, trains or subways, and many universities include a transit pass in student fees or offer a discounted one. A monthly transit pass is usually in the range of C$80 to C$150.\n\nFor trips between cities, distances are long, so most students use trains, intercity coaches or low-cost flights, and plan bigger trips for holidays. Most students don't need a car, and winter driving takes real experience, so it's best to wait until you know the area.",
+            "image": "/images/countries/canada/travel.jpg"
+          },
+          {
+            "slug": "language",
+            "title": "Language",
+            "body": "English and French are both official languages. Across most of Canada daily life and teaching happen in English, while Quebec is mainly French-speaking, and cities like Montreal, Ottawa and parts of New Brunswick are bilingual.\n\nMost international students study in English, and several universities in Quebec teach in French. Learning some French can help with jobs and day-to-day life in those areas, and either language can be used to prove your level for study and work permits.",
+            "image": "/images/countries/canada/language.jpg"
+          },
+          {
+            "slug": "holidays",
+            "title": "Holidays",
+            "body": "The Canadian calendar is full of celebrations worth planning around: Canada Day on 1 July, Thanksgiving in October, Remembrance Day on 11 November, Christmas and New Year, plus provincial holidays such as Family Day in February and Victoria Day in May. There are also local festivals, winter carnivals and music events almost every month.\n\nUniversities build a break around the winter holidays and a short reading week in the middle of term, which gives international students a natural window to travel or rest. The long summer break is a good chance to work, take a co-op placement or explore the country.",
+            "image": "/images/countries/canada/holidays.jpg"
+          }
+        ]
+      }
+    },
+    "whyStudy": {
+      "summary": "Beyond the rankings, here's what matters day to day: what it costs to live, how much you can work while you study, and what you can do after you graduate.",
+      "bannerImage": "/images/countries/canada/why-study-banner.jpg",
+      "video": {
+        "youtubeId": "REPLACE_WITH_REAL_YOUTUBE_ID",
+        "thumbnail": "/images/countries/canada/why-study-thumb.jpg"
+      },
+      "reasons": [
+        {
+          "heading": "High-Quality Universities and Colleges, Respected Worldwide",
+          "body": "Canada is home to well-known research universities such as the University of Toronto, McGill and the University of British Columbia, alongside colleges that focus on practical, career-ready training. Employers around the world recognise Canadian qualifications, and teaching tends to be discussion-based, with plenty of group work and independent thinking.\n\nWhether you want a research-heavy degree or a hands-on diploma, there is a route that fits, and many programmes let you build in work experience along the way.",
+          "highlight": true
+        },
+        {
+          "heading": "Good Value, Especially at Graduate Level",
+          "body": "Tuition depends a lot on the province and the programme. Statistics Canada's 2025/26 figures put the average for international undergraduates at about C$41,746 a year and for international graduate students at about C$24,028. Averages range widely: roughly C$18,867 for undergraduates in Newfoundland and Labrador, compared with about C$49,802 in Ontario.\n\nThat means choosing your province and programme carefully can change your total cost a great deal, and smaller cities often have lower rent too.",
+          "highlight": false
+        },
+        {
+          "heading": "Work While You Study",
+          "body": "If your study permit allows it, you can work off campus for up to 24 hours a week during term and full-time during scheduled breaks, and on-campus work is also possible. That can cover some day-to-day costs and give you real Canadian work experience before you graduate.\n\nIt isn't enough to fund your studies on its own, so treat it as a supplement. Always check your study permit conditions before you start a job.",
+          "highlight": false
+        },
+        {
+          "heading": "A Clear Route to Work After Graduation",
+          "body": "Many graduates can apply for a Post-Graduation Work Permit (PGWP), which can last up to three years depending on the length of your programme. Graduates of a master's degree can receive the full three years even if the programme was shorter than two years, as long as they meet the other requirements.\n\nBachelor's, master's and doctoral graduates do not have to meet the field-of-study list, but you do need to prove your English or French level, and you can only receive one PGWP in your lifetime. Canadian work experience can also help later if you want to apply to stay long-term.",
+          "highlight": true
+        },
+        {
+          "heading": "A Safe, Welcoming, Multicultural Home",
+          "body": "Canada is one of the most diverse countries in the world, and international students quickly find classmates, food, festivals and communities from their own part of the world. Most campuses run orientation programmes, peer mentors and student services built around newcomers.\n\nCities are generally safe, public services work well, and people tend to be friendly and polite, which makes the first few weeks far easier.",
+          "highlight": false
+        },
+        {
+          "heading": "Study in English, French, or Both",
+          "body": "Canada has two official languages, which gives you choices most countries can't. Most students study in English, but you can also study in French in Quebec and bilingual regions, and many students pick up some French along the way.\n\nBeing able to work in two international languages is a real advantage on your CV, whether you stay in Canada or return home.",
+          "highlight": false
+        },
+        {
+          "heading": "Hands-On Learning and Industry Links",
+          "body": "Many Canadian programmes include co-op terms, internships or required work placements, so you graduate with experience as well as a degree. This is especially common in engineering, business, computer science and health programmes.\n\nRecent rule changes mean most post-secondary international students no longer need a separate co-op work permit for placements that are a required part of their programme, but always confirm the details with your university's international office.",
+          "highlight": true
+        }
+      ],
+      "sections": [
+        {
+          "title": "Cost of Living",
+          "summary": "From 1 September 2026, a single study permit applicant must show C$23,448 for living costs, which works out to roughly C$1,950 a month, and many students spend more in Vancouver and Toronto.",
+          "body": "Rent is usually the biggest expense, and it varies a lot by city: it is highest in Vancouver and Toronto and generally lower in smaller cities. Food is often C$200 to C$600 a month, and a monthly transit pass is usually C$80 to C$150. Quebec sets its own, higher proof-of-funds amount for study permits, so students heading there should check the Quebec rules. Budget for your first month carefully, since landlords often ask for a deposit or advance rent."
+        },
+        {
+          "title": "Part-time Job Opportunities",
+          "summary": "Eligible students can work up to 24 hours a week off campus during term, and full-time during scheduled breaks.",
+          "body": "Common student jobs include retail, hospitality, campus roles and tutoring. The 24-hour limit is strict, and working more than your permit allows can put your status at risk, so keep a record of your hours. Work is only allowed if your study permit says so, and you can't start working before your programme begins. Part-time income rarely covers all living costs, so it works best as a supplement."
+        },
+        {
+          "title": "After Graduation",
+          "summary": "Graduates can apply for a Post-Graduation Work Permit of up to three years, depending on programme length.",
+          "body": "To qualify for a PGWP you need to graduate from an eligible programme at a designated learning institution, study full time, and meet the language requirement (CLB 7 for university degrees, CLB 5 for college programmes). You must apply within 180 days of getting confirmation that you've completed your programme. Career services at most Canadian universities offer CV help, interview practice and employer events, which are worth using well before your final term."
+        }
+      ]
+    },
+    "courses": {
+      "topCourses": [
+        {
+          "rank": 1,
+          "name": "Engineering",
+          "body": "Engineering is one of the most popular choices for international students in Canada, with civil, mechanical, electrical, software and chemical engineering all drawing strong interest. Canadian engineering degrees are widely recognised, many include co-op terms, and the skills carry across construction, energy, technology and manufacturing. It's a demanding subject, so check the maths and science requirements for your level before you apply."
+        },
+        {
+          "rank": 2,
+          "name": "Business and Management",
+          "body": "Business and management remains one of the most popular fields of study among international students in Canada, from undergraduate business degrees to MBAs and specialist master's programmes in areas like marketing, supply chain and analytics. The skills are useful in almost any industry, and many programmes offer co-op or internship options that help you build a Canadian network."
+        },
+        {
+          "rank": 3,
+          "name": "Computer Science",
+          "body": "Computer Science attracts a large share of international applicants, supported by strong research departments and a busy tech sector in cities like Toronto, Vancouver, Waterloo and Montreal. Programmes cover software, systems, security and more, and co-op streams are common. Because nearly every industry now depends on software, graduate options stay broad."
+        },
+        {
+          "rank": 4,
+          "name": "Nursing",
+          "body": "Nursing is a popular route for students who want a career in health care, and Canada has an ongoing need for nurses. Entry is competitive, programmes include supervised clinical placements, and licensing as a nurse in Canada has extra steps beyond graduation, so it's worth checking the rules of the province where you want to work."
+        },
+        {
+          "rank": 5,
+          "name": "Accounting and Finance",
+          "body": "Accounting and finance programmes appeal to students who want a clear professional path. Canadian business schools often link their degrees to professional accounting bodies and offer co-op placements with banks and firms. The skills are in demand across industries, and finance and accounting graduates have a wide choice of employers."
+        },
+        {
+          "rank": 6,
+          "name": "Data Science",
+          "body": "Data science sits between statistics and computing, and interest in it among international students has grown quickly. Programmes teach how to collect, analyse and interpret data, often with machine learning and visualisation, and you'll find options at both undergraduate and master's level. It suits students who enjoy maths and problem-solving."
+        },
+        {
+          "rank": 7,
+          "name": "Psychology",
+          "body": "Psychology is popular for its mix of science and social study, covering how people think, feel and behave. It builds research, statistics and communication skills that carry into health, education, human resources and data roles. Some careers, such as clinical practice, need further study and licensing, so it helps to know where you want to end up."
+        },
+        {
+          "rank": 8,
+          "name": "Health Sciences",
+          "body": "Health sciences covers areas such as public health, biomedical science and rehabilitation, and it draws students who want a health career without going straight into medicine. Health-related fields have become a bigger share of international student interest in recent years. Many graduates go on to further study, research or roles in health systems and public health."
+        },
+        {
+          "rank": 9,
+          "name": "Medicine",
+          "body": "Medicine attracts many applications, but places for international students are very limited and entry is among the most competitive of any subject, so only a small share of applicants receive an offer. Programmes follow strict professional standards, and practising in Canada after graduation involves licensing steps. It's wise to go in with a backup plan, such as a related health degree."
+        },
+        {
+          "rank": 10,
+          "name": "Artificial Intelligence",
+          "body": "Artificial intelligence is one of the fastest-growing areas of study, and Canada has a strong research reputation in machine learning, with major research groups in cities like Toronto, Montreal and Edmonton. Programmes are mostly at master's and PhD level, though more undergraduate options are appearing, and a solid background in maths and programming helps."
+        }
+      ],
+      "entryRequirements": {
+        "undergraduate": "Typically a high school diploma or equivalent (such as A-Levels, the IB or a national board certificate) with strong grades in relevant subjects, plus English proficiency, often IELTS around 6.5 overall with no band below 6.0 for universities. Colleges often accept around IELTS 6.0. Requirements vary by programme, so check each one.",
+        "postgraduate": "Usually a four-year bachelor's degree in a related subject with a strong grade average, plus a statement of purpose and references, and English proficiency around IELTS 6.5 to 7.0. Research degrees may also need a supervisor to agree to take you on, and professional programmes can have extra requirements."
+      },
+      "intakes": [
+        {
+          "name": "September: Main Intake",
+          "detail": "The main intake, with the widest choice of programmes, scholarships and housing. Application deadlines for most universities fall somewhere between December and March for a September start, with some competitive programmes and scholarships closing earlier, so aim to apply 9 to 12 months ahead."
+        },
+        {
+          "name": "January: Second Intake",
+          "detail": "Offered by many colleges and some universities, but with a smaller range of programmes. It's a useful option if you missed the September deadline or need more time to organise your funds and documents."
+        },
+        {
+          "name": "May: Smaller Intake",
+          "detail": "A limited intake, mostly at colleges and for selected programmes. Not every institution offers it, so check early whether your chosen course starts in May."
+        }
+      ],
+      "faqs": [
+        {
+          "id": "english-requirements",
+          "question": "What English score do I need, and which tests are accepted?",
+          "answer": "Most Canadian universities ask for around IELTS 6.5 overall for undergraduate courses and 6.5 to 7.0 for postgraduate ones, while many colleges accept around 6.0. Some universities also take TOEFL, PTE, the Duolingo English Test or a Medium of Instruction letter, so check each one.\n\nThere is a second language rule to know about: to receive a Post-Graduation Work Permit after a university degree, you need CLB 7, which is about IELTS 6.0 in each skill. For this you need to take an approved test such as IELTS General Training, CELPIP General or PTE Core, so it's worth planning for it before you finish your degree."
+        },
+        {
+          "id": "study-permit-funds",
+          "question": "How much money do I need to show for the study permit?",
+          "answer": "You need to show you can pay your first year's tuition, living costs and travel to Canada. From 1 September 2026, the living-cost amount for a single applicant is C$23,448 (outside Quebec), and it is higher if you bring family. Quebec has its own, higher requirement, so check it if you plan to study there.\n\nThis figure doesn't include tuition. A Guaranteed Investment Certificate is a common way to show funds, but IRCC accepts other proof as well, such as bank statements. The study permit fee is C$150, with an extra C$85 for biometrics, so keep some money on top."
+        },
+        {
+          "id": "pal-and-cap",
+          "question": "What is a Provincial Attestation Letter (PAL), and do I need one?",
+          "answer": "Canada limits the number of study permits it issues each year, and most new applicants must include a Provincial or Territorial Attestation Letter that shows they have a place within their province's share. Your university usually helps you request it. Students going to Quebec need a CAQ instead, which plays the same role.\n\nSince 1 January 2026, students starting a master's or doctoral degree at a public institution don't need a PAL. This doesn't cover graduate certificates and diplomas, or private institutions. Rules and allocations change from year to year, so confirm the current position with your university and on the IRCC website before you apply."
+        },
+        {
+          "id": "scholarships",
+          "question": "Are there scholarships for international students?",
+          "answer": "Yes, but competition is strong. The best-known are the Lester B. Pearson International Scholarship at the University of Toronto (a full undergraduate award, where your school nominates you), the Vanier Canada Graduate Scholarships for PhD students (C$50,000 a year for three years, with a university nomination), and the UBC International Leader of Tomorrow award.\n\nMost universities also give entrance awards to international students, from a few hundred to tens of thousands of dollars. Some are considered automatically when you apply, while others need a separate form and an earlier deadline, often in the autumn before your September start. Check each university's scholarship page early."
+        },
+        {
+          "id": "when-to-apply",
+          "question": "When should I start applying?",
+          "answer": "Start 9 to 12 months before your course begins. For a September start, many universities set deadlines between December and March, and some competitive programmes and scholarships close earlier. Colleges often run rolling admissions, but popular courses can fill up.\n\nOnce you have an offer, you'll need your attestation letter (if required), proof of funds and other documents for the study permit. Applying early leaves time to fix problems, which is useful because documents are sometimes queried."
+        },
+        {
+          "id": "family-dependants",
+          "question": "Can I bring my spouse or children with me?",
+          "answer": "It depends on your level of study. A spouse or common-law partner can apply for an open work permit only if you are studying a master's degree of 16 months or longer, a doctoral degree, or one of a few eligible professional programmes. Spouses of undergraduate and college students generally cannot get one.\n\nDependent children can come to Canada and attend school. Your partner and children also need to meet the visa requirements and show extra funds. These rules have tightened recently, so check them before you choose a course if your family plans to join you."
+        },
+        {
+          "id": "health-insurance",
+          "question": "Will I have health cover as an international student?",
+          "answer": "Health cover depends on the province, and it isn't automatic in the way it is in some countries. In Ontario, international students aren't covered by the public plan and are normally enrolled in the University Health Insurance Plan (UHIP). In British Columbia, you can join the public Medical Services Plan, but there can be a waiting period, so you'll need temporary private cover first.\n\nAlberta offers public cover to eligible students on longer permits, and in Quebec many schools enrol international students in a group plan. Universities also run extended health and dental plans for things like prescriptions. Check what your university and province provide before you arrive."
+        },
+        {
+          "id": "accommodation",
+          "question": "Where will I live, and how much will it cost?",
+          "answer": "Many first-year students live in university residence, which is the simplest option, and many universities guarantee a place to new students who apply by the deadline. After that, most students share a rented flat or house, or rent a room in a family home.\n\nRent is the biggest part of your budget and varies a lot by city: it is highest in Vancouver and Toronto and often lower in smaller cities. Apply for residence as early as you can, and be careful with online listings, since rental scams are common. Never send money before you've seen a place or checked the landlord."
+        },
+        {
+          "id": "visa-refusal",
+          "question": "What if my study permit is refused?",
+          "answer": "A refusal isn't always the end of the road. The refusal letter explains why, so read it carefully and tell your university. Common reasons include unclear study plans, weak proof of funds or missing documents.\n\nMost students fix the weak point and apply again with a stronger application and a clear explanation of why they chose their programme. In some cases you can ask the Federal Court to review the decision, but it is slow and the deadlines are short, so get advice quickly if you want to go that way."
+        },
+        {
+          "id": "apply-without-consultancy",
+          "question": "Can I apply on my own, or do I need a consultancy?",
+          "answer": "You can absolutely apply on your own. Universities accept direct applications and the study permit is applied for on the official IRCC website, and plenty of students do it themselves.\n\nThe catch is that there are many moving parts: choosing the right province and programme, meeting deadlines, getting an attestation letter, preparing proof of funds and writing a convincing study plan. Small mistakes are a common reason for delays or refusals. If you'd like a second pair of eyes on your plan, you can book an appointment with our team."
+        }
+      ],
+      "guidanceIntro": "Canada offers thousands of undergraduate, college and postgraduate programmes. When choosing a course, it helps to think about your academic and career goals, whether the programme offers co-op or work placements, and which province suits your budget and lifestyle.",
+      "guidanceQuestions": [
+        "What subject are you most interested in, and how does it fit your future plans?",
+        "Does the programme include a co-op term, internship or work placement?",
+        "Is the institution a designated learning institution, and does the programme qualify for a Post-Graduation Work Permit?",
+        "What are the entry and language requirements for your level of study?",
+        "Which province and city fit your budget, and what do current students say about them?"
+      ],
+      "externalResources": [
+        {
+          "label": "IRCC: Study in Canada",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
+        },
+        {
+          "label": "IRCC: Provincial attestation letters",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "canada",
+    "heroImage": null,
+    "heroVideo": null,
+    "about": {
+      "preview": {
+        "heading": "Study in a Country Known for Its Welcome",
+        "paragraph": "Canada has high-quality universities and colleges spread across ten provinces and three territories, from big, busy cities to quieter campus towns. You can pick a setting that fits how you want to live, and study in English, in French, or in both.\n\nOutside the classroom you'll find a safe, multicultural society, well-run public services, and plenty of open space for weekends away.",
+        "image": "/images/countries/canada/about-preview.jpg"
+      },
+      "details": {
+        "bannerImage": "/images/countries/canada/about-banner.jpg",
+        "introParagraph": "Beyond the strong teaching and well-regarded degrees, there is a lot to like about life in Canada. It is a country built by people from all over the world, and that shows in its neighbourhoods, food, festivals and everyday attitudes. Cities are safe and easy to settle into, public transport is widespread, and nature is never far away, whether that means a lake, a mountain trail or a quiet beach. Winters are cold, but campuses and cities are well set up for them, and most international students find the welcome warmer than the weather.",
+        "highlight": {
+          "slug": "provinces",
+          "title": "Provinces and Territories",
+          "body": "Canada is made up of ten provinces and three territories, each with its own character, climate and, in some cases, language. Most international students study in Ontario and British Columbia, home to cities like Toronto, Ottawa and Vancouver, but Quebec, Alberta, Nova Scotia and the Prairie provinces all have strong institutions and often lower living costs.\n\nEducation is run by each province, so tuition, health cover and the rules for attestation letters can differ depending on where you study. It's worth comparing provinces, not just universities, before you apply.",
+          "image": "/images/countries/canada/provinces.jpg"
+        },
+        "topics": [
+          {
+            "slug": "food",
+            "title": "Food",
+            "body": "Canadian food is a mix of local favourites and flavours from around the world. You'll find poutine, maple syrup treats, butter tarts and Nanaimo bars, but also excellent South Asian, East Asian, Middle Eastern, Caribbean and African food in almost every big city. Halal, kosher and vegetarian options are easy to find in most university cities.\n\nStudent budgets stretch furthest if you cook at home. Supermarkets such as Walmart, No Frills and Costco keep everyday groceries affordable, and many campuses have student-priced cafés and food banks. A typical grocery budget is around C$200 to C$600 a month, depending on how often you eat out.",
+            "image": "/images/countries/canada/food.jpg"
+          },
+          {
+            "slug": "weather",
+            "title": "Weather",
+            "body": "Canada has four clear seasons. Summers are warm and sunny, autumn brings brilliant colours, and winters can be properly cold and snowy, especially in Ontario, Quebec and the Prairies, where temperatures often fall well below freezing. The Pacific coast, including Vancouver, is milder but wetter.\n\nIf you come from a warmer country, the first winter takes some adjusting to. A good winter coat, insulated waterproof boots, gloves and layers you can add or remove are worth buying early. Many cities, such as Toronto and Montreal, also have indoor walkways and underground networks that make winter days easier.",
+            "image": "/images/countries/canada/weather.jpg"
+          },
+          {
+            "slug": "religion",
+            "title": "Religion",
+            "body": "Canada is a multi-faith, largely secular society where freedom of religion is protected and people of many beliefs live side by side. Most university cities have mosques, temples, gurdwaras, churches, synagogues and other places of worship within reach of campus, and student unions often run faith and cultural societies.\n\nCampuses are generally well set up for religious students, with prayer and multi-faith spaces, chaplaincy services and dietary options in dining halls. It's worth checking the services at your specific university once you have an offer.",
+            "image": "/images/countries/canada/religion.jpg"
+          },
+          {
+            "slug": "travel-and-transport",
+            "title": "Travel and Transport",
+            "body": "Canada is huge, but getting around your own city is straightforward. Toronto, Montreal, Vancouver and most other cities have buses, trains or subways, and many universities include a transit pass in student fees or offer a discounted one. A monthly transit pass is usually in the range of C$80 to C$150.\n\nFor trips between cities, distances are long, so most students use trains, intercity coaches or low-cost flights, and plan bigger trips for holidays. Most students don't need a car, and winter driving takes real experience, so it's best to wait until you know the area.",
+            "image": "/images/countries/canada/travel.jpg"
+          },
+          {
+            "slug": "language",
+            "title": "Language",
+            "body": "English and French are both official languages. Across most of Canada daily life and teaching happen in English, while Quebec is mainly French-speaking, and cities like Montreal, Ottawa and parts of New Brunswick are bilingual.\n\nMost international students study in English, and several universities in Quebec teach in French. Learning some French can help with jobs and day-to-day life in those areas, and either language can be used to prove your level for study and work permits.",
+            "image": "/images/countries/canada/language.jpg"
+          },
+          {
+            "slug": "holidays",
+            "title": "Holidays",
+            "body": "The Canadian calendar is full of celebrations worth planning around: Canada Day on 1 July, Thanksgiving in October, Remembrance Day on 11 November, Christmas and New Year, plus provincial holidays such as Family Day in February and Victoria Day in May. There are also local festivals, winter carnivals and music events almost every month.\n\nUniversities build a break around the winter holidays and a short reading week in the middle of term, which gives international students a natural window to travel or rest. The long summer break is a good chance to work, take a co-op placement or explore the country.",
+            "image": "/images/countries/canada/holidays.jpg"
+          }
+        ]
+      }
+    },
+    "whyStudy": {
+      "summary": "Beyond the rankings, here's what matters day to day: what it costs to live, how much you can work while you study, and what you can do after you graduate.",
+      "bannerImage": "/images/countries/canada/why-study-banner.jpg",
+      "video": {
+        "youtubeId": "REPLACE_WITH_REAL_YOUTUBE_ID",
+        "thumbnail": "/images/countries/canada/why-study-thumb.jpg"
+      },
+      "reasons": [
+        {
+          "heading": "High-Quality Universities and Colleges, Respected Worldwide",
+          "body": "Canada is home to well-known research universities such as the University of Toronto, McGill and the University of British Columbia, alongside colleges that focus on practical, career-ready training. Employers around the world recognise Canadian qualifications, and teaching tends to be discussion-based, with plenty of group work and independent thinking.\n\nWhether you want a research-heavy degree or a hands-on diploma, there is a route that fits, and many programmes let you build in work experience along the way.",
+          "highlight": true
+        },
+        {
+          "heading": "Good Value, Especially at Graduate Level",
+          "body": "Tuition depends a lot on the province and the programme. Statistics Canada's 2025/26 figures put the average for international undergraduates at about C$41,746 a year and for international graduate students at about C$24,028. Averages range widely: roughly C$18,867 for undergraduates in Newfoundland and Labrador, compared with about C$49,802 in Ontario.\n\nThat means choosing your province and programme carefully can change your total cost a great deal, and smaller cities often have lower rent too.",
+          "highlight": false
+        },
+        {
+          "heading": "Work While You Study",
+          "body": "If your study permit allows it, you can work off campus for up to 24 hours a week during term and full-time during scheduled breaks, and on-campus work is also possible. That can cover some day-to-day costs and give you real Canadian work experience before you graduate.\n\nIt isn't enough to fund your studies on its own, so treat it as a supplement. Always check your study permit conditions before you start a job.",
+          "highlight": false
+        },
+        {
+          "heading": "A Clear Route to Work After Graduation",
+          "body": "Many graduates can apply for a Post-Graduation Work Permit (PGWP), which can last up to three years depending on the length of your programme. Graduates of a master's degree can receive the full three years even if the programme was shorter than two years, as long as they meet the other requirements.\n\nBachelor's, master's and doctoral graduates do not have to meet the field-of-study list, but you do need to prove your English or French level, and you can only receive one PGWP in your lifetime. Canadian work experience can also help later if you want to apply to stay long-term.",
+          "highlight": true
+        },
+        {
+          "heading": "A Safe, Welcoming, Multicultural Home",
+          "body": "Canada is one of the most diverse countries in the world, and international students quickly find classmates, food, festivals and communities from their own part of the world. Most campuses run orientation programmes, peer mentors and student services built around newcomers.\n\nCities are generally safe, public services work well, and people tend to be friendly and polite, which makes the first few weeks far easier.",
+          "highlight": false
+        },
+        {
+          "heading": "Study in English, French, or Both",
+          "body": "Canada has two official languages, which gives you choices most countries can't. Most students study in English, but you can also study in French in Quebec and bilingual regions, and many students pick up some French along the way.\n\nBeing able to work in two international languages is a real advantage on your CV, whether you stay in Canada or return home.",
+          "highlight": false
+        },
+        {
+          "heading": "Hands-On Learning and Industry Links",
+          "body": "Many Canadian programmes include co-op terms, internships or required work placements, so you graduate with experience as well as a degree. This is especially common in engineering, business, computer science and health programmes.\n\nRecent rule changes mean most post-secondary international students no longer need a separate co-op work permit for placements that are a required part of their programme, but always confirm the details with your university's international office.",
+          "highlight": true
+        }
+      ],
+      "sections": [
+        {
+          "title": "Cost of Living",
+          "summary": "From 1 September 2026, a single study permit applicant must show C$23,448 for living costs, which works out to roughly C$1,950 a month, and many students spend more in Vancouver and Toronto.",
+          "body": "Rent is usually the biggest expense, and it varies a lot by city: it is highest in Vancouver and Toronto and generally lower in smaller cities. Food is often C$200 to C$600 a month, and a monthly transit pass is usually C$80 to C$150. Quebec sets its own, higher proof-of-funds amount for study permits, so students heading there should check the Quebec rules. Budget for your first month carefully, since landlords often ask for a deposit or advance rent."
+        },
+        {
+          "title": "Part-time Job Opportunities",
+          "summary": "Eligible students can work up to 24 hours a week off campus during term, and full-time during scheduled breaks.",
+          "body": "Common student jobs include retail, hospitality, campus roles and tutoring. The 24-hour limit is strict, and working more than your permit allows can put your status at risk, so keep a record of your hours. Work is only allowed if your study permit says so, and you can't start working before your programme begins. Part-time income rarely covers all living costs, so it works best as a supplement."
+        },
+        {
+          "title": "After Graduation",
+          "summary": "Graduates can apply for a Post-Graduation Work Permit of up to three years, depending on programme length.",
+          "body": "To qualify for a PGWP you need to graduate from an eligible programme at a designated learning institution, study full time, and meet the language requirement (CLB 7 for university degrees, CLB 5 for college programmes). You must apply within 180 days of getting confirmation that you've completed your programme. Career services at most Canadian universities offer CV help, interview practice and employer events, which are worth using well before your final term."
+        }
+      ]
+    },
+    "courses": {
+      "topCourses": [
+        {
+          "rank": 1,
+          "name": "Computer Science and Information Technology",
+          "body": "Computer science and IT programmes cover programming, software development, data analysis and cybersecurity, and most also include databases, networks, algorithms and a growing amount of artificial intelligence and machine learning. Universities usually teach the theory and mathematics behind computing, while colleges tend to focus on applied, job-ready IT skills, so it's worth deciding which style suits you. Many programmes include co-op terms or a final project built with a real client, and the maths and logic you build here transfer to almost any technical field."
+        },
+        {
+          "rank": 2,
+          "name": "Engineering",
+          "body": "Engineering programmes cover civil, mechanical, electrical, chemical, aerospace and software engineering, among others. Many universities start with a shared first year of maths, physics and design, then let you choose a specialisation, and learning is a mix of lectures, labs and team design projects, often finishing with a capstone project. It helps to choose a programme accredited by Engineers Canada, since that matters if you later want to become a licensed professional engineer. A strong background in maths and physics makes the first years much easier."
+        },
+        {
+          "rank": 3,
+          "name": "Business and Management",
+          "body": "Business and management programmes focus on leadership, finance, marketing and entrepreneurship, and many also include operations, human resources, supply chain and business analytics. Teaching is usually case-based, with a lot of group work, presentations and real company projects, and you can study it as a bachelor's degree, a college diploma or a master's such as an MBA. Many programmes let you specialise in your second or third year, and co-op or internship options are common."
+        },
+        {
+          "rank": 4,
+          "name": "Health Sciences (Nursing, Pharmacy, Medicine)",
+          "body": "Health sciences is a broad area that includes nursing, pharmacy, medicine and related fields such as biomedical science, public health and rehabilitation. These programmes combine science courses with supervised clinical placements, so you learn in hospitals and clinics as well as in the classroom. Professional paths such as nursing and pharmacy lead to a licensing exam set by each province, and most medical schools take very few international students, so it's wise to look at related degrees as well. Strong results in biology and chemistry are usually expected."
+        },
+        {
+          "rank": 5,
+          "name": "Finance and Accounting",
+          "body": "Finance and accounting programmes teach financial management, auditing and investment analysis, along with taxation, financial reporting and risk management. Accounting degrees are often designed to meet part of the education requirements for professional designations such as the CPA, and finance programmes often prepare you for exams like the CFA. The subject is quantitative and detail-focused, so it suits students who enjoy numbers, spreadsheets and structured problem-solving."
+        },
+        {
+          "rank": 6,
+          "name": "Environmental Science and Sustainability",
+          "body": "These programmes focus on sustainable practices and environmental conservation, and they bring together ecology, climate science, water and soil studies, renewable energy and environmental policy. Canada's forests, coastlines, lakes and Arctic landscapes make it a strong place for fieldwork, and many courses include time outdoors and lab work, plus tools such as mapping and data analysis (GIS). It suits students who like science but also want to work on real-world questions such as climate and resource management."
+        },
+        {
+          "rank": 7,
+          "name": "Arts and Humanities",
+          "body": "Arts and humanities programmes explore human culture, history, literature, philosophy and languages, and they build critical thinking, research and writing skills. Teaching is based on seminars, reading and essays, with plenty of discussion, and areas such as linguistics, creative writing and Indigenous studies are often available too. Most universities let you combine a major with a minor in another subject, which makes the degree flexible if you're still deciding where your interests lie."
+        },
+        {
+          "rank": 8,
+          "name": "Hospitality and Tourism Management",
+          "body": "Hospitality and tourism programmes teach hotel and resort operations, event planning, food and beverage management and tourism marketing. They are strongly practical, with training in simulated hotels and kitchens, group projects, and often a work placement as part of the course. You can study it as a college diploma or as a degree, and the course suits students who enjoy working with people and organising experiences."
+        },
+        {
+          "rank": 9,
+          "name": "International Relations and Political Science",
+          "body": "This area looks at global politics, diplomacy and international affairs, and covers political theory, comparative politics, international law, security and human rights. Teaching is built around reading, debate and research papers, and studying in Canada gives you access to a bilingual capital, Ottawa, which is home to government institutions, embassies and think tanks. It suits students who enjoy analysing how countries and institutions make decisions."
+        },
+        {
+          "rank": 10,
+          "name": "Education and Early Childhood Development",
+          "body": "Education programmes focus on teaching methods, child development and curriculum design, and include learning theory, inclusive classrooms and supervised practice in schools or childcare settings. Early childhood programmes are often offered as college diplomas or degrees, while teacher education in many provinces is a degree taken after a first degree. Becoming a licensed teacher requires certification from the province where you want to work, so it's worth checking those rules early."
+        }
+      ],
+      "entryRequirements": {
+        "undergraduate": "Typically a high school diploma or equivalent (such as A-Levels, the IB or a national board certificate) with strong grades in relevant subjects, plus English proficiency, often IELTS around 6.5 overall with no band below 6.0 for universities. Colleges often accept around IELTS 6.0. Requirements vary by programme, so check each one.",
+        "postgraduate": "Usually a four-year bachelor's degree in a related subject with a strong grade average, plus a statement of purpose and references, and English proficiency around IELTS 6.5 to 7.0. Research degrees may also need a supervisor to agree to take you on, and professional programmes can have extra requirements."
+      },
+      "intakes": [
+        {
+          "name": "September: Main Intake",
+          "detail": "The main intake, with the widest choice of programmes, scholarships and housing. Application deadlines for most universities fall somewhere between December and March for a September start, with some competitive programmes and scholarships closing earlier, so aim to apply 9 to 12 months ahead."
+        },
+        {
+          "name": "January: Second Intake",
+          "detail": "Offered by many colleges and some universities, but with a smaller range of programmes. It's a useful option if you missed the September deadline or need more time to organise your funds and documents."
+        },
+        {
+          "name": "May: Smaller Intake",
+          "detail": "A limited intake, mostly at colleges and for selected programmes. Not every institution offers it, so check early whether your chosen course starts in May."
+        }
+      ],
+      "faqs": [
+        {
+          "id": "english-requirements",
+          "question": "What English score do I need, and which tests are accepted?",
+          "answer": "Most Canadian universities ask for around IELTS 6.5 overall for undergraduate courses and 6.5 to 7.0 for postgraduate ones, while many colleges accept around 6.0. Some universities also take TOEFL, PTE, the Duolingo English Test or a Medium of Instruction letter, so check each one.\n\nThere is a second language rule to know about: to receive a Post-Graduation Work Permit after a university degree, you need CLB 7, which is about IELTS 6.0 in each skill. For this you need to take an approved test such as IELTS General Training, CELPIP General or PTE Core, so it's worth planning for it before you finish your degree."
+        },
+        {
+          "id": "study-permit-funds",
+          "question": "How much money do I need to show for the study permit?",
+          "answer": "You need to show you can pay your first year's tuition, living costs and travel to Canada. From 1 September 2026, the living-cost amount for a single applicant is C$23,448 (outside Quebec), and it is higher if you bring family. Quebec has its own, higher requirement, so check it if you plan to study there.\n\nThis figure doesn't include tuition. A Guaranteed Investment Certificate is a common way to show funds, but IRCC accepts other proof as well, such as bank statements. The study permit fee is C$150, with an extra C$85 for biometrics, so keep some money on top."
+        },
+        {
+          "id": "pal-and-cap",
+          "question": "What is a Provincial Attestation Letter (PAL), and do I need one?",
+          "answer": "Canada limits the number of study permits it issues each year, and most new applicants must include a Provincial or Territorial Attestation Letter that shows they have a place within their province's share. Your university usually helps you request it. Students going to Quebec need a CAQ instead, which plays the same role.\n\nSince 1 January 2026, students starting a master's or doctoral degree at a public institution don't need a PAL. This doesn't cover graduate certificates and diplomas, or private institutions. Rules and allocations change from year to year, so confirm the current position with your university and on the IRCC website before you apply."
+        },
+        {
+          "id": "scholarships",
+          "question": "Are there scholarships for international students?",
+          "answer": "Yes, but competition is strong. The best-known are the Lester B. Pearson International Scholarship at the University of Toronto (a full undergraduate award, where your school nominates you), the Vanier Canada Graduate Scholarships for PhD students (C$50,000 a year for three years, with a university nomination), and the UBC International Leader of Tomorrow award.\n\nMost universities also give entrance awards to international students, from a few hundred to tens of thousands of dollars. Some are considered automatically when you apply, while others need a separate form and an earlier deadline, often in the autumn before your September start. Check each university's scholarship page early."
+        },
+        {
+          "id": "when-to-apply",
+          "question": "When should I start applying?",
+          "answer": "Start 9 to 12 months before your course begins. For a September start, many universities set deadlines between December and March, and some competitive programmes and scholarships close earlier. Colleges often run rolling admissions, but popular courses can fill up.\n\nOnce you have an offer, you'll need your attestation letter (if required), proof of funds and other documents for the study permit. Applying early leaves time to fix problems, which is useful because documents are sometimes queried."
+        },
+        {
+          "id": "family-dependants",
+          "question": "Can I bring my spouse or children with me?",
+          "answer": "It depends on your level of study. A spouse or common-law partner can apply for an open work permit only if you are studying a master's degree of 16 months or longer, a doctoral degree, or one of a few eligible professional programmes. Spouses of undergraduate and college students generally cannot get one.\n\nDependent children can come to Canada and attend school. Your partner and children also need to meet the visa requirements and show extra funds. These rules have tightened recently, so check them before you choose a course if your family plans to join you."
+        },
+        {
+          "id": "health-insurance",
+          "question": "Will I have health cover as an international student?",
+          "answer": "Health cover depends on the province, and it isn't automatic in the way it is in some countries. In Ontario, international students aren't covered by the public plan and are normally enrolled in the University Health Insurance Plan (UHIP). In British Columbia, you can join the public Medical Services Plan, but there can be a waiting period, so you'll need temporary private cover first.\n\nAlberta offers public cover to eligible students on longer permits, and in Quebec many schools enrol international students in a group plan. Universities also run extended health and dental plans for things like prescriptions. Check what your university and province provide before you arrive."
+        },
+        {
+          "id": "accommodation",
+          "question": "Where will I live, and how much will it cost?",
+          "answer": "Many first-year students live in university residence, which is the simplest option, and many universities guarantee a place to new students who apply by the deadline. After that, most students share a rented flat or house, or rent a room in a family home.\n\nRent is the biggest part of your budget and varies a lot by city: it is highest in Vancouver and Toronto and often lower in smaller cities. Apply for residence as early as you can, and be careful with online listings, since rental scams are common. Never send money before you've seen a place or checked the landlord."
+        },
+        {
+          "id": "visa-refusal",
+          "question": "What if my study permit is refused?",
+          "answer": "A refusal isn't always the end of the road. The refusal letter explains why, so read it carefully and tell your university. Common reasons include unclear study plans, weak proof of funds or missing documents.\n\nMost students fix the weak point and apply again with a stronger application and a clear explanation of why they chose their programme. In some cases you can ask the Federal Court to review the decision, but it is slow and the deadlines are short, so get advice quickly if you want to go that way."
+        },
+        {
+          "id": "apply-without-consultancy",
+          "question": "Can I apply on my own, or do I need a consultancy?",
+          "answer": "You can absolutely apply on your own. Universities accept direct applications and the study permit is applied for on the official IRCC website, and plenty of students do it themselves.\n\nThe catch is that there are many moving parts: choosing the right province and programme, meeting deadlines, getting an attestation letter, preparing proof of funds and writing a convincing study plan. Small mistakes are a common reason for delays or refusals. If you'd like a second pair of eyes on your plan, you can book an appointment with our team."
+        }
+      ],
+      "guidanceIntro": "Canada offers thousands of undergraduate, college and postgraduate programmes. When choosing a course, it helps to think about your academic and career goals, whether the programme offers co-op or work placements, and which province suits your budget and lifestyle.",
+      "guidanceQuestions": [
+        "What subject are you most interested in, and how does it fit your future plans?",
+        "Does the programme include a co-op term, internship or work placement?",
+        "Is the institution a designated learning institution, and does the programme qualify for a Post-Graduation Work Permit?",
+        "What are the entry and language requirements for your level of study?",
+        "Which province and city fit your budget, and what do current students say about them?"
+      ],
+      "externalResources": [
+        {
+          "label": "IRCC: Study in Canada",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html"
+        },
+        {
+          "label": "IRCC: Provincial attestation letters",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html"
+        }
       ]
     }
   }

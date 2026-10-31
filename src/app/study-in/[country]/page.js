@@ -37,8 +37,7 @@ export default async function CountryPage({ params }) {
     );
   }
 
-  // Image for the courses section. Set courses.previewImage in countryDetails.json
-  // to use a different file; otherwise this default path is used.
+
   const coursesImage =
     details.courses?.previewImage ??
     `/images/countries/${country.slug}/courses-preview.jpg`;

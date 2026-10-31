@@ -11,5 +11,18 @@
       "postStudyVisa": "18 months (Graduate Route)",
       "language": "English"
     }
+  },
+   {
+    "slug": "canada",
+    "name": "Canada",
+    "featuredOnHome": true,
+    "homeImage": "/images/countries/canada-card.jpg",
+    "shortIntro": "A welcoming, multicultural country with high-quality universities and colleges, safe cities, and a clear path to work after you graduate.",
+    "quickFacts": {
+      "avgLivingCost": "C$1,950+/month",
+      "avgTuition": "C$24,000–41,700/year",
+      "postStudyVisa": "Up to 3 years (PGWP)",
+      "language": "English & French"
+    }
   }
 ]
