@@ -40,24 +40,24 @@ export default async function CoursesPage({ params }) {
   return (
     <main>
       <CourseGallery label={country.name} />
-      
+
 
       {/*  TOP 10 COURSES 
          */}
       <section className="bg-white px-5 py-14 lg:px-8">
 
         <div className="-mt-4 px-5 pb-2 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <Link
-            href={`/study-in/${country.slug}`}
-            aria-label={`Back to ${country.name} overview`}
-            className="inline-flex items-center gap-2 rounded-full bg-[#101820] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-opacity hover:opacity-90"
-          >
-            <span aria-hidden="true" className="text-base text-[#C9A227]">&larr;</span>
-            Back
-          </Link>
+          <div className="mx-auto max-w-6xl">
+            <Link
+              href={`/study-in/${country.slug}`}
+              aria-label={`Back to ${country.name} overview`}
+              className="inline-flex items-center gap-2 rounded-full bg-[#101820] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-opacity hover:opacity-90"
+            >
+              <span aria-hidden="true" className="text-base text-[#C9A227]">&larr;</span>
+              Back
+            </Link>
+          </div>
         </div>
-      </div>
 
 
         <div className="mx-auto max-w-3xl">
@@ -67,10 +67,9 @@ export default async function CoursesPage({ params }) {
           <h2 className="mt-3 text-2xl font-bold text-[#101820] md:text-4xl lg:text-5xl">
             Top 10 Courses in {country.name}
           </h2>
-          <p className="mt-4 text-sm text-[#101820]/70 md:text-base">
-            The most in-demand subjects among international students, based on
-            application volume — a useful starting point if you're still deciding
-            what to study.
+          <p className="mt-4 text-sm text-[#101820]/70 md:text-base lg:text-lg">
+            Some of the most popular subjects among international students in {country.name}.
+            A useful starting point if you're still deciding what to study.
           </p>
 
           <div className="mt-8">
@@ -279,10 +278,10 @@ export default async function CoursesPage({ params }) {
       </section>
 
 
-     <section className="bg-[#FAF9F4] px-5 pb-20 pt-10 md:pb-28 lg:px-8">
+      <section className="bg-[#FAF9F4] px-5 pb-20 pt-10 md:pb-28 lg:px-8">
 
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center">
-       
+
 
           <div className="flex flex-col gap-3  sm:contents">
             <Link
@@ -290,7 +289,7 @@ export default async function CoursesPage({ params }) {
               className="w-full rounded-lg bg-[#101820] px-6 py-3 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90 sm:w-auto"
             >
               International Student Career Growth {country.name}
-               
+
             </Link>
 
             <Link
