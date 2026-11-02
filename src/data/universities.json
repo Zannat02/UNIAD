@@ -88,5 +88,149 @@
     "website": "https://warwick.ac.uk",
     "topCourses": ["Business & Management", "Mathematics", "Economics", "Statistics"],
     "tuitionRange": "£26,000 – £35,000/year"
+  },
+    {
+    "slug": "university-of-toronto",
+    "name": "University of Toronto",
+    "countrySlug": "canada",
+    "rank": 1,
+    "website": "https://www.utoronto.ca",
+    "topCourses": [
+      "Computer Science",
+      "Engineering",
+      "Medicine",
+      "Business"
+    ],
+    "tuitionRange": "C$45,000 – C$70,000/year"
+  },
+  {
+    "slug": "mcgill-university",
+    "name": "McGill University",
+    "countrySlug": "canada",
+    "rank": 2,
+    "website": "https://www.mcgill.ca",
+    "topCourses": [
+      "Medicine",
+      "Law",
+      "Computer Science",
+      "Business"
+    ],
+    "tuitionRange": "C$30,000 – C$60,000/year"
+  },
+  {
+    "slug": "university-of-british-columbia",
+    "name": "University of British Columbia (UBC)",
+    "countrySlug": "canada",
+    "rank": 3,
+    "website": "https://www.ubc.ca",
+    "topCourses": [
+      "Business",
+      "Computer Science",
+      "Engineering",
+      "Environmental Science"
+    ],
+    "tuitionRange": "C$42,000 – C$68,000/year"
+  },
+  {
+    "slug": "mcmaster-university",
+    "name": "McMaster University",
+    "countrySlug": "canada",
+    "rank": 4,
+    "website": "https://www.mcmaster.ca",
+    "topCourses": [
+      "Health Sciences",
+      "Medicine",
+      "Engineering",
+      "Business"
+    ],
+    "tuitionRange": "C$30,000 – C$50,000/year"
+  },
+  {
+    "slug": "university-of-alberta",
+    "name": "University of Alberta",
+    "countrySlug": "canada",
+    "rank": 5,
+    "website": "https://www.ualberta.ca",
+    "topCourses": [
+      "Engineering",
+      "Artificial Intelligence (AI)",
+      "Business",
+      "Medicine"
+    ],
+    "tuitionRange": "C$25,000 – C$45,000/year"
+  },
+  {
+    "slug": "universite-de-montreal",
+    "name": "Université de Montréal",
+    "countrySlug": "canada",
+    "rank": 6,
+    "website": "https://www.umontreal.ca",
+    "topCourses": [
+      "Computer Science",
+      "Artificial Intelligence (AI)",
+      "Medicine",
+      "Nursing"
+    ],
+    "tuitionRange": "C$20,000 – C$35,000/year"
+  },
+  {
+    "slug": "university-of-waterloo",
+    "name": "University of Waterloo",
+    "countrySlug": "canada",
+    "rank": 7,
+    "website": "https://uwaterloo.ca",
+    "topCourses": [
+      "Computer Science",
+      "Software Engineering",
+      "Data Science",
+      "Mathematics"
+    ],
+    "tuitionRange": "C$40,000 – C$75,000/year"
+  },
+  {
+    "slug": "university-of-calgary",
+    "name": "University of Calgary",
+    "countrySlug": "canada",
+    "rank": 8,
+    "website": "https://www.ucalgary.ca",
+    "topCourses": [
+      "Engineering",
+      "Business",
+      "Computer Science",
+      "Energy Studies"
+    ],
+    "tuitionRange": "C$25,000 – C$45,000/year"
+  },
+  {
+    "slug": "university-of-ottawa",
+    "name": "University of Ottawa",
+    "countrySlug": "canada",
+    "rank": 9,
+    "website": "https://www.uottawa.ca",
+    "topCourses": [
+      "Law",
+      "Political Science",
+      "Engineering",
+      "Business"
+    ],
+    "tuitionRange": "C$28,000 – C$45,000/year"
+  },
+  {
+    "slug": "western-university",
+    "name": "Western University",
+    "countrySlug": "canada",
+    "rank": 10,
+    "website": "https://www.uwo.ca",
+    "topCourses": [
+      "Business (Ivey Business School)",
+      "Medicine",
+      "Law",
+      "Nursing"
+    ],
+    "tuitionRange": "C$30,000 – C$55,000/year"
   }
+
+
 ]
+
+

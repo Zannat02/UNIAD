@@ -3,7 +3,7 @@
     "slug": "business-management",
     "label": "Business & Management",
     "tagline": "Learn how organisations run, from strategy and finance to marketing and people.",
-    "keywords": ["business", "management", "finance", "economics", "accounting"]
+    "keywords": ["business", "management", "finance", "economics", "accounting", "hospitality"]
   },
   {
     "slug": "computer-science-it",
@@ -33,7 +33,7 @@
     "slug": "science-mathematics",
     "label": "Science & Mathematics",
     "tagline": "Explore how the natural world works, using mathematics, data and experiment.",
-    "keywords": ["mathematics", "natural sciences", "earth sciences", "statistics", "physics", "chemistry"]
+    "keywords": ["mathematics", "natural sciences", "earth sciences", "statistics", "physics", "chemistry", "environmental"]
   },
   {
     "slug": "social-sciences-politics",
