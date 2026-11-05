@@ -4,6 +4,7 @@ import countryDetails from "@/data/countryDetails.json";
 import universities from "@/data/universities.json";
 import CourseGallery from "@/components/country/CourseGallery";
 import FaqAccordion from "@/components/country/FaqAccordion";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
@@ -29,13 +30,7 @@ export default async function CoursesPage({ params }) {
     .filter((u) => u.countrySlug === countrySlug)
     .sort((a, b) => a.rank - b.rank);
 
-  if (!country || !details) {
-    return (
-      <div className="px-5 py-24 text-center text-[#101820]">
-        <p>We couldn&apos;t find that country page.</p>
-      </div>
-    );
-  }
+ if (!country || !details) notFound();
 
   return (
     <main>

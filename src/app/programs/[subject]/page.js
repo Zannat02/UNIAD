@@ -4,6 +4,7 @@ import subjectCategories from "@/data/subjectCategories.json";
 import nav from "@/data/navigation.json";
 import FallbackImage from "@/components/country/FallbackImage";
 import { sectionsFor } from "@/lib/programs";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return subjectCategories.map((c) => ({ subject: c.slug }));
@@ -28,19 +29,9 @@ export default async function SubjectPage({ params, searchParams }) {
 
   const category = subjectCategories.find((c) => c.slug === subjectSlug);
 
-  if (!category) {
-    return (
-      <div className="px-5 py-24 text-center text-[#101820]">
-        <p className="text-sm md:text-base lg:text-lg">
-          We couldn&apos;t find that subject.
-        </p>
-        <Link href="/" className="mt-4 inline-block font-semibold underline">
-          Back to program search
-        </Link>
-      </div>
-    );
-  }
+ if (!category) notFound();
 
+ 
   const allSections = sectionsFor(category);
   const selected = countryParam
     ? allSections.filter((s) => s.country.slug === countryParam)

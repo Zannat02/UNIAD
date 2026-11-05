@@ -3,6 +3,7 @@ import countries from "@/data/countries.json";
 import countryDetails from "@/data/countryDetails.json";
 import EditorialSplit from "@/components/country/EditorialSplit";
 import FallbackImage from "@/components/country/FallbackImage";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return countries.map((c) => ({ country: c.slug }));
@@ -26,13 +27,7 @@ export default async function WhyStudyPage({ params }) {
   const country = countries.find((c) => c.slug === countrySlug);
   const details = countryDetails.find((d) => d.slug === countrySlug);
 
-  if (!country || !details) {
-    return (
-      <div className="px-5 py-24 text-center text-[#101820]">
-        <p>We couldn't find that country page.</p>
-      </div>
-    );
-  }
+ if (!country || !details) notFound();
 
   const { whyStudy } = details;
 
