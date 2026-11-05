@@ -229,32 +229,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 6. CTA band */}
-      <section className="bg-[#101820] px-5 pb-20 pt-14 text-center md:pb-28 lg:px-8 lg:pt-20">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold text-white md:text-4xl lg:text-5xl">
-            Ready to plan your study-abroad journey?
-          </h2>
-          <p className="mt-4 text-sm text-white/70 md:text-base lg:text-lg">
-            Talk to our team about your goals, budget and options. We will give
-            you honest advice.
-          </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/book-appointment"
-              className="rounded-lg bg-[#C9A227] px-10 py-3 text-sm font-semibold text-[#101820] hover:opacity-90"
-            >
-              Book an Appointment
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-lg border border-white/40 px-10 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white hover:text-[#101820]"
-            >
-              Contact Us
-            </Link>
+          {/* 6. CTA band */}
+      <section className="bg-[#FAF9F4] px-5 pb-20 pt-14 md:pb-28 lg:px-8 lg:pt-20">
+        <div className="mx-auto max-w-5xl rounded-2xl bg-[#101820] px-6 py-12 text-center shadow-md md:px-12 md:py-16">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl font-bold text-white md:text-4xl lg:text-5xl">
+              Ready to plan your study-abroad journey?
+            </h2>
+            <p className="mt-4 text-sm text-white/70 md:text-base lg:text-lg">
+              Talk to our team about your goals, budget and options. We will
+              give you honest advice.
+            </p>
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/book-appointment"
+                className="rounded-lg bg-[#C9A227] px-10 py-3 text-sm font-semibold text-[#101820] hover:opacity-90"
+              >
+                Book an Appointment
+              </Link>
+              <Link
+                href="/contact"
+                className="rounded-lg border border-white/40 px-10 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white hover:text-[#101820]"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </section>
     </>
   );
 }
+
